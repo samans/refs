@@ -6,7 +6,7 @@
 &#xD;
 Revisions:&#xD;
 &#xD;
-2.0.04	2026-04-13		ITU-T G.7721 v2.0.04 (Draft)		Aligned with the latest editions of the PTP Telecom Profiles and SyncPhy ITU-T Recommendations (i.e., ITU-T G.8275.1 v5.0, ITU-T G.8275.2 v4.0, and ITU-T G.781 v6.0).&#xD;
+2.0.04	2026-04-16		ITU-T G.7721 v2.0.04 (Draft)		Aligned with the latest editions of the PTP Telecom Profiles and SyncPhy ITU-T Recommendations (i.e., ITU-T G.8275.1 v5.0, ITU-T G.8275.2 v4.0, and ITU-T G.781 v6.0).&#xD;
 2.0		2025-08-22		ITU-T G.7721 v2.0 (08/2025)		Added the SyncPhy UML information model.&#xD;
 1.2		2024-12-07		ITU-T G.7721 v1.2 (12/2024)		Aligned with the latest versions of the PTP telecom profiles in ITU-T G.8265.1 v4.1, ITU-T G.8275.1 v4.2, and ITU-T G.8275.2 v3.2.&#xD;
 1.1		2022-11-13		ITU-T G.7721 v1.1 (11/2022)		Aligned the PTP UML information model with the data set defined in IEEE 1588-2019.&#xD;
@@ -1977,7 +1977,7 @@ Note that this pending issue has no impact on the YANG models defined in G.7721.
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_VPXZUDyQEe-nEP0EFGHiZg" name="nodeClass" type="_oZ9bbjyPEe-nEP0EFGHiZg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_VPXZUTyQEe-nEP0EFGHiZg" annotatedElement="_VPXZUDyQEe-nEP0EFGHiZg">
-            <body>The clock node’s time error performance compliance.&#xD;
+            <body>The clock node's time error performance compliance.&#xD;
 &#xD;
 This attribute applies only to G.8275.1 and G.8275.2 PTP Telecom Profile Instances.&#xD;
 &#xD;
@@ -1991,7 +1991,7 @@ The profile attribute qualifies whether the node class is a G.8275.1 or a G.8275
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zreGwC3pEfGX7Jwr7U0FeQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_eYeDMC3pEfGX7Jwr7U0FeQ" name="_localTimeReference" type="_cxxLIC3pEfGX7Jwr7U0FeQ" isReadOnly="true" aggregation="composite" association="_eYc1EC3pEfGX7Jwr7U0FeQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eYeDMC3pEfGX7Jwr7U0FeQ" name="_localTimeReference" type="_cxxLIC3pEfGX7Jwr7U0FeQ" aggregation="composite" association="_eYc1EC3pEfGX7Jwr7U0FeQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_JTMdIC3qEfGX7Jwr7U0FeQ" annotatedElement="_eYeDMC3pEfGX7Jwr7U0FeQ">
             <body>The additional Default data set (DS) members of the PTP Telecom Profile Instance in an end application with local time reference (LTR).</body>
           </ownedComment>
@@ -2568,7 +2568,7 @@ When set to TRUE, the TM code is used.</body>
         <ownedComment xmi:type="uml:Comment" xmi:id="_B6CbEC3mEfGX7Jwr7U0FeQ" annotatedElement="_3hc2oC3lEfGX7Jwr7U0FeQ">
           <body>The additional Current data set (DS) members of the PTP Telecom Profile Instance.</body>
         </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xw1tci3mEfGX7Jwr7U0FeQ" name="_localTimeReference" type="_BZn8cDc4EfGh5N2JPvLWEQ" aggregation="composite" association="_xwz4QC3mEfGX7Jwr7U0FeQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xw1tci3mEfGX7Jwr7U0FeQ" name="_localTimeReference" type="_BZn8cDc4EfGh5N2JPvLWEQ" isReadOnly="true" aggregation="composite" association="_xwz4QC3mEfGX7Jwr7U0FeQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_XlCScC3nEfGX7Jwr7U0FeQ" annotatedElement="_xw1tci3mEfGX7Jwr7U0FeQ">
             <body>The additional Current data set (DS) members of the PTP Telecom Profile Instance in an end application with local time reference (LTR).</body>
           </ownedComment>
@@ -3259,9 +3259,9 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_pf3ZMa9kEeyhFvM20gSYXA" base_Property="_pf3ZMK9kEeyhFvM20gSYXA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pf3ZMq9kEeyhFvM20gSYXA" base_StructuralFeature="_pf3ZMK9kEeyhFvM20gSYXA"/>
   <OpenModel_Profile:ExtendedComposite xmi:id="_UnkfMK9lEeyhFvM20gSYXA" base_Association="_pftBIK9kEeyhFvM20gSYXA"/>
-  <OpenModel_Profile:Reference xmi:id="_2eMJcK9nEeyhFvM20gSYXA" base_Element="_KHpDcAJQEeegkdv_tKLxWg" reference="IEEE Std 1588-2019: clause 3.1.53; ITU-T G.8265.1 v4.1 (08/2024): annex A.2; ITU-T G.8275.1 v5.0 (02/2026): annex A.2; ITU-T G.8275.2 v4.0 (02/2026): annex A.2."/>
+  <OpenModel_Profile:Reference xmi:id="_2eMJcK9nEeyhFvM20gSYXA" base_Element="_KHpDcAJQEeegkdv_tKLxWg" reference="IEEE Std 1588-2019: clause 3.1.53; ITU-T G.8265.1 v4.1 (08/2024): annex A.2; ITU-T G.8275.1 v5.0 (02/2026): annex A.2; ITU-T G.8275.2 v4.0 (02/2026): annex A.2"/>
   <OpenModel_Profile:Reference xmi:id="_LbMiQLBBEeyhQMOM4kxDSg" base_Element="_Fb53oAJREeegkdv_tKLxWg" reference="IEEE Std 1588-2019: clause 8.2.1.4.3."/>
-  <OpenModel_Profile:Reference xmi:id="_HGK7YLBEEeyhQMOM4kxDSg" base_Element="_q6Ro4G1REeydFovuecmELg" reference="IEEE Std 1588-2019: clause 8.2.1."/>
+  <OpenModel_Profile:Reference xmi:id="_HGK7YLBEEeyhQMOM4kxDSg" base_Element="_q6Ro4G1REeydFovuecmELg" reference="IEEE Std 1588-2019: clause 8.2.1"/>
   <OpenModel_Profile:Reference xmi:id="_IrhvoLBEEeyhQMOM4kxDSg" base_Element="_R-1zwAJREeegkdv_tKLxWg" reference="IEEE Std 1588-2019: clause 8.2.1.4.4."/>
   <OpenModel_Profile:Reference xmi:id="_mRxmULBFEeyhQMOM4kxDSg" base_Element="_bQoUcAOfEeez57snrR3MGw" reference="IEEE Std 1588-2019: clause 8.2.1.2.2."/>
   <OpenModel_Profile:OpenModelStatement xmi:id="_pSSr0LBXEeyYRpDngUbC1w" base_Model="_p5STsFqCEeeEToh03JBYQA" namespace="urn:itu:t:rec:sync-ne:uml:itut-sync" organization="ITU-T Study Group 15 (SG15) - International Telecommunication Union" description="This model defines the protocol-neutral UML information model for managing a synchronization network and equipment based on the synchronization architecture and equipment defined in the ITU-T Recommendations which includes: the Precision Time Protocol (PTP) Telecom Profiles, defined in ITU-T G.8265.1, G.8275.1 and G.8275.2; the SyncPhy Protocol, defined in ITU-T G.781." copyright="Copyright(C) ITU (2025)." license="All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.">
@@ -3284,14 +3284,14 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_P_PdMPuYEeyYWcp8834_4g" base_Property="_P_Ly0PuYEeyYWcp8834_4g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_notB0fuYEeyYWcp8834_4g" base_StructuralFeature="_notB0PuYEeyYWcp8834_4g" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_nowsMPuYEeyYWcp8834_4g" base_Property="_notB0PuYEeyYWcp8834_4g" bitLength="LENGTH_8_BIT"/>
-  <OpenModel_Profile:Reference xmi:id="_sUL5gPuYEeyYWcp8834_4g" base_Element="_notB0PuYEeyYWcp8834_4g" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.1, item e); ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.1, item e)."/>
+  <OpenModel_Profile:Reference xmi:id="_sUL5gPuYEeyYWcp8834_4g" base_Element="_notB0PuYEeyYWcp8834_4g" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.1, item e); ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.1, item e)"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8yqeIfuYEeyYWcp8834_4g" base_StructuralFeature="_8yqeIPuYEeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_8yuvkPuYEeyYWcp8834_4g" base_Property="_8yqeIPuYEeyYWcp8834_4g" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_A6q1UfuZEeyYWcp8834_4g" base_StructuralFeature="_A6q1UPuZEeyYWcp8834_4g" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_A6ufsPuZEeyYWcp8834_4g" base_Property="_A6q1UPuZEeyYWcp8834_4g" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Ek5rYPuZEeyYWcp8834_4g" base_StructuralFeature="_Ek5EUPuZEeyYWcp8834_4g" valueRange="0..4095" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Ek980PuZEeyYWcp8834_4g" base_Property="_Ek5EUPuZEeyYWcp8834_4g" bitLength="LENGTH_16_BIT"/>
-  <OpenModel_Profile:Reference xmi:id="_NNvJcPuZEeyYWcp8834_4g" base_Element="_8yqeIPuYEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.1.2.1."/>
+  <OpenModel_Profile:Reference xmi:id="_NNvJcPuZEeyYWcp8834_4g" base_Element="_8yqeIPuYEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.1.2.1"/>
   <OpenModel_Profile:Reference xmi:id="_cu0RsPuZEeyYWcp8834_4g" base_Element="_A6q1UPuZEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.1.2.3."/>
   <OpenModel_Profile:Reference xmi:id="_np1NwPuZEeyYWcp8834_4g" base_Element="_Ek5EUPuZEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.1.4.5."/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__9zH8PuZEeyYWcp8834_4g" base_StructuralFeature="__9wrsPuZEeyYWcp8834_4g" unsigned="true" support="CONDITIONAL"/>
@@ -3300,7 +3300,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GvtEIPubEeyYWcp8834_4g" base_StructuralFeature="_GvpZwPubEeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Gvx8oPubEeyYWcp8834_4g" base_Property="_GvpZwPubEeyYWcp8834_4g"/>
   <ActionLanguage:TextualRepresentation xmi:id="_Gv4DQPubEeyYWcp8834_4g" base_Comment="_GvpZwfubEeyYWcp8834_4g" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <OpenModel_Profile:Reference xmi:id="_SsZfoPubEeyYWcp8834_4g" base_Element="_GvpZwPubEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.6 and 7.6.2.2."/>
+  <OpenModel_Profile:Reference xmi:id="_SsZfoPubEeyYWcp8834_4g" base_Element="_GvpZwPubEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.6 and 7.6.2.2"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_iQ41UfuoEeyYWcp8834_4g" base_StructuralFeature="_iQ41UPuoEeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_iQ_jAPuoEeyYWcp8834_4g" base_Property="_iQ41UPuoEeyYWcp8834_4g"/>
   <OpenModel_Profile:Reference xmi:id="_rY_CQPuoEeyYWcp8834_4g" base_Element="_iQ41UPuoEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.3.2."/>
@@ -3308,8 +3308,8 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_d5TfIPuqEeyYWcp8834_4g" base_Property="_d5JHEPuqEeyYWcp8834_4g" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_d5Y-sfuqEeyYWcp8834_4g" base_StructuralFeature="_d5Y-sPuqEeyYWcp8834_4g" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_d5Y-svuqEeyYWcp8834_4g" base_Property="_d5Y-sPuqEeyYWcp8834_4g" bitLength="LENGTH_8_BIT"/>
-  <OpenModel_Profile:Reference xmi:id="_tOMlgPuqEeyYWcp8834_4g" base_Element="_d5JHEPuqEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.8 and 7.6.2.2."/>
-  <OpenModel_Profile:Reference xmi:id="_BBmekPurEeyYWcp8834_4g" base_Element="_d5Y-sPuqEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.9 and 7.6.2.3."/>
+  <OpenModel_Profile:Reference xmi:id="_tOMlgPuqEeyYWcp8834_4g" base_Element="_d5JHEPuqEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.8 and 7.6.2.2"/>
+  <OpenModel_Profile:Reference xmi:id="_BBmekPurEeyYWcp8834_4g" base_Element="_d5Y-sPuqEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.3.9 and 7.6.2.3"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Raq-wPurEeyYWcp8834_4g" base_StructuralFeature="_RaoigPurEeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_RauCEPurEeyYWcp8834_4g" base_Property="_RaoigPurEeyYWcp8834_4g"/>
   <OpenModel_Profile:Reference xmi:id="_do8AgPutEeyYWcp8834_4g" base_Element="_P_Ly0PuYEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.4.9."/>
@@ -3334,10 +3334,10 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_BXlG4PuxEeyYWcp8834_4g" base_Property="_BXiDkPuxEeyYWcp8834_4g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DieRIfuxEeyYWcp8834_4g" base_StructuralFeature="_DieRIPuxEeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_DiiikPuxEeyYWcp8834_4g" base_Property="_DieRIPuxEeyYWcp8834_4g"/>
-  <OpenModel_Profile:Reference xmi:id="_CRk0gPuyEeyYWcp8834_4g" base_Element="_-h8WgPuwEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.3 and 11.2."/>
-  <OpenModel_Profile:Reference xmi:id="_VFCTgPuyEeyYWcp8834_4g" base_Element="_BXiDkPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.4 and 7.4.2."/>
+  <OpenModel_Profile:Reference xmi:id="_CRk0gPuyEeyYWcp8834_4g" base_Element="_-h8WgPuwEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.3 and 11.2"/>
+  <OpenModel_Profile:Reference xmi:id="_VFCTgPuyEeyYWcp8834_4g" base_Element="_BXiDkPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.4 and 7.4.2"/>
   <OpenModel_Profile:Experimental xmi:id="_VLv_gPuyEeyYWcp8834_4g" base_Element="_BXiDkPuxEeyYWcp8834_4g"/>
-  <OpenModel_Profile:Reference xmi:id="_dAoREPuyEeyYWcp8834_4g" base_Element="_DieRIPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.4 and 7.4.2."/>
+  <OpenModel_Profile:Reference xmi:id="_dAoREPuyEeyYWcp8834_4g" base_Element="_DieRIPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clauses 8.2.2.4 and 7.4.2"/>
   <OpenModel_Profile:Reference xmi:id="_m38UcPuyEeyYWcp8834_4g" base_Element="_RaoigPurEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 8.2.3.7."/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zYmfAPu6EeyYWcp8834_4g" base_StructuralFeature="_zYl38Pu6EeyYWcp8834_4g" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_zYpiUPu6EeyYWcp8834_4g" base_Property="_zYl38Pu6EeyYWcp8834_4g"/>
@@ -3475,28 +3475,28 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_2cAs0j19Ee2W1rFizNp8rQ" base_Property="_2cAs0D19Ee2W1rFizNp8rQ"/>
   <OpenModel_Profile:ExtendedComposite xmi:id="_JjD2MD1-Ee2W1rFizNp8rQ" base_Association="_2b4xAD19Ee2W1rFizNp8rQ"/>
   <OpenModel_Profile:Reference xmi:id="_nMs0kD1-Ee2W1rFizNp8rQ" base_Element="_PXn24AJyEeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15."/>
-  <OpenModel_Profile:Reference xmi:id="_rH9JMD1-Ee2W1rFizNp8rQ" base_Element="_xFukoD19Ee2W1rFizNp8rQ" reference="ITU-T G.8265.1 v4.1 (08/2024): table A.5; ITU-T G.8275.1 v5.0 (02/2026): table A.5; ITU-T G.8275.2 v4.0 (02/2026): table A.5."/>
+  <OpenModel_Profile:Reference xmi:id="_rH9JMD1-Ee2W1rFizNp8rQ" base_Element="_xFukoD19Ee2W1rFizNp8rQ" reference="ITU-T G.8265.1 v4.1 (08/2024): table A.5; ITU-T G.8275.1 v5.0 (02/2026): table A.5; ITU-T G.8275.2 v4.0 (02/2026): table A.5"/>
   <OpenModel_Profile:Reference xmi:id="_wTYFMD1-Ee2W1rFizNp8rQ" base_Element="_C_DeAD17Ee26VY7FQl4S4g" reference="IEEE Std 1588-2008: clause 8.3.3; IEEE Std 1588-2019: clause 8.3.3."/>
   <OpenModel_Profile:Reference xmi:id="__cO6sD1-Ee2W1rFizNp8rQ" base_Element="_EdpDUAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.5.1."/>
   <OpenModel_Profile:Reference xmi:id="_KxoFoD1_Ee2W1rFizNp8rQ" base_Element="_EtiggAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.3.1."/>
   <OpenModel_Profile:Preliminary xmi:id="_Mwj3gD1_Ee2W1rFizNp8rQ" base_Element="_EtiggAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="_WkZJED1_Ee2W1rFizNp8rQ" base_Element="_E_HYsAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.8; IEEE Std 1588-2019: clause 7.4.2."/>
+  <OpenModel_Profile:Reference xmi:id="_WkZJED1_Ee2W1rFizNp8rQ" base_Element="_E_HYsAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.8; IEEE Std 1588-2019: clause 7.4.2"/>
   <OpenModel_Profile:Preliminary xmi:id="_Wqo7AD1_Ee2W1rFizNp8rQ" base_Element="_E_HYsAJ3EeetMLWdj1z_Ew"/>
   <OpenModel_Profile:Experimental xmi:id="__YjCoD2AEe2W1rFizNp8rQ" base_Element="_FdSicAJ3EeetMLWdj1z_Ew"/>
   <OpenModel_Profile:Experimental xmi:id="_S3fuoD2BEe2W1rFizNp8rQ" base_Element="_X5szYAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="_qN-s4D2BEe2W1rFizNp8rQ" base_Element="_YOG9IAJ3EeetMLWdj1z_Ew" reference="Reference: IEEE Std 1588-2019: clause 8.2.15.4.1; IEEE Std 1588-2019: clause 7.2.2.2."/>
+  <OpenModel_Profile:Reference xmi:id="_qN-s4D2BEe2W1rFizNp8rQ" base_Element="_YOG9IAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.1; IEEE Std 1588-2019: clause 7.2.2.2"/>
   <OpenModel_Profile:Preliminary xmi:id="_qUSwQD2BEe2W1rFizNp8rQ" base_Element="_YOG9IAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="_0WGMYD2BEe2W1rFizNp8rQ" base_Element="_YhFjgAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.2; IEEE Std 1588-2019: clause 7.7.3.1."/>
+  <OpenModel_Profile:Reference xmi:id="_0WGMYD2BEe2W1rFizNp8rQ" base_Element="_YhFjgAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.2; IEEE Std 1588-2019: clause 7.7.3.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_0cZosD2BEe2W1rFizNp8rQ" base_Element="_YhFjgAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="__nBuED2BEe2W1rFizNp8rQ" base_Element="_Y6StsAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.3; IEEE Std 1588-2019: clause 7.2.2.3."/>
+  <OpenModel_Profile:Reference xmi:id="__nBuED2BEe2W1rFizNp8rQ" base_Element="_Y6StsAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.4.3; IEEE Std 1588-2019: clause 7.2.2.3"/>
   <OpenModel_Profile:Preliminary xmi:id="__teUUD2BEe2W1rFizNp8rQ" base_Element="_Y6StsAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="_R5v3gD2CEe2W1rFizNp8rQ" base_Element="_muO-sAJ3EeetMLWdj1z_Ew" reference="Reference: IEEE Std 1588-2019: clause 8.2.15.3.2; IEEE Std 1588-2019: clause 7.7.2.4."/>
+  <OpenModel_Profile:Reference xmi:id="_R5v3gD2CEe2W1rFizNp8rQ" base_Element="_muO-sAJ3EeetMLWdj1z_Ew" reference="IEEE Std 1588-2019: clause 8.2.15.3.2; IEEE Std 1588-2019: clause 7.7.2.4"/>
   <OpenModel_Profile:Preliminary xmi:id="_SAZ5ID2CEe2W1rFizNp8rQ" base_Element="_muO-sAJ3EeetMLWdj1z_Ew"/>
-  <OpenModel_Profile:Reference xmi:id="_Y2dK8D2CEe2W1rFizNp8rQ" base_Element="_rGAVYFpJEeeEToh03JBYQA" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.1, item d); ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.1, item d)."/>
+  <OpenModel_Profile:Reference xmi:id="_Y2dK8D2CEe2W1rFizNp8rQ" base_Element="_rGAVYFpJEeeEToh03JBYQA" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.1, item d); ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.1, item d)"/>
   <OpenModel_Profile:Reference xmi:id="_vi6UwD2CEe2W1rFizNp8rQ" base_Element="__aQUsAnwEeie2pyb6Oj64w" reference="IEEE Std 1588-2019: clause 8.2.15.5.2."/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RwVx8D2EEe2W1rFizNp8rQ" base_StructuralFeature="_RwVK4D2EEe2W1rFizNp8rQ" support="CONDITIONAL" condition=""/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_RwZcUD2EEe2W1rFizNp8rQ" base_Property="_RwVK4D2EEe2W1rFizNp8rQ" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_hdj4wD2EEe2W1rFizNp8rQ" base_Element="_RwVK4D2EEe2W1rFizNp8rQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11."/>
+  <OpenModel_Profile:Reference xmi:id="_hdj4wD2EEe2W1rFizNp8rQ" base_Element="_RwVK4D2EEe2W1rFizNp8rQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n2wgYT2NEe2W1rFizNp8rQ" base_StructuralFeature="_n2wgYD2NEe2W1rFizNp8rQ" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_n2zjsD2NEe2W1rFizNp8rQ" base_Property="_n2wgYD2NEe2W1rFizNp8rQ" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:Reference xmi:id="_ut2UAD2NEe2W1rFizNp8rQ" base_Element="_n2wgYD2NEe2W1rFizNp8rQ" reference="IEEE Std 1588-2008: clause 8.3.2.3.2; IEEE Std 1588-2019: clause 8.3.2.3.2."/>
@@ -3547,52 +3547,52 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_JOq_IL9_Ee6xirORnB-xqg" base_Property="_JOmtsL9_Ee6xirORnB-xqg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gwpmQb-AEe6xirORnB-xqg" base_StructuralFeature="_gwpmQL-AEe6xirORnB-xqg" support="CONDITIONAL_OPTIONAL" condition="When the extended Quality Level (eQL) TLV is not implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_gwvs4L-AEe6xirORnB-xqg" base_Property="_gwpmQL-AEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_8l3TMMA8Ee6xirORnB-xqg" base_Element="_wsxU4I4hEe6SbvyeR7moDg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.3."/>
-  <OpenModel_Profile:Reference xmi:id="_CNHPkMA9Ee6xirORnB-xqg" base_Element="_gwpmQL-AEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.2."/>
+  <OpenModel_Profile:Reference xmi:id="_8l3TMMA8Ee6xirORnB-xqg" base_Element="_wsxU4I4hEe6SbvyeR7moDg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.3"/>
+  <OpenModel_Profile:Reference xmi:id="_CNHPkMA9Ee6xirORnB-xqg" base_Element="_gwpmQL-AEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.2"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HOp20cA9Ee6xirORnB-xqg" base_StructuralFeature="_HOp20MA9Ee6xirORnB-xqg" support="CONDITIONAL_OPTIONAL" condition="When the extended Quality Level (eQL) TLV is not implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_HOvWYMA9Ee6xirORnB-xqg" base_Property="_HOp20MA9Ee6xirORnB-xqg"/>
-  <OpenModel_Profile:Reference xmi:id="_WZxWIMA9Ee6xirORnB-xqg" base_Element="_HOp20MA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.4."/>
+  <OpenModel_Profile:Reference xmi:id="_WZxWIMA9Ee6xirORnB-xqg" base_Element="_HOp20MA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.4"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Z4h8AcA9Ee6xirORnB-xqg" base_StructuralFeature="_Z4h8AMA9Ee6xirORnB-xqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Z4k_UMA9Ee6xirORnB-xqg" base_Property="_Z4h8AMA9Ee6xirORnB-xqg"/>
-  <OpenModel_Profile:Reference xmi:id="_gm54gMA9Ee6xirORnB-xqg" base_Element="_Z4h8AMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.5."/>
+  <OpenModel_Profile:Reference xmi:id="_gm54gMA9Ee6xirORnB-xqg" base_Element="_Z4h8AMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.5"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8Cd1wcA9Ee6xirORnB-xqg" base_StructuralFeature="_8Cd1wMA9Ee6xirORnB-xqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_8ChgIMA9Ee6xirORnB-xqg" base_Property="_8Cd1wMA9Ee6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_HPz38MA-Ee6xirORnB-xqg" base_Element="_8Cd1wMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.6."/>
+  <OpenModel_Profile:Reference xmi:id="_HPz38MA-Ee6xirORnB-xqg" base_Element="_8Cd1wMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.6"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AwgcwcA_Ee6xirORnB-xqg" base_StructuralFeature="_AwgcwMA_Ee6xirORnB-xqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_AwkHIMA_Ee6xirORnB-xqg" base_Property="_AwgcwMA_Ee6xirORnB-xqg"/>
-  <OpenModel_Profile:Reference xmi:id="_nvahYMA_Ee6xirORnB-xqg" base_Element="_AwgcwMA_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.7."/>
-  <OpenModel_Profile:Reference xmi:id="_Bbe28MBAEe6xirORnB-xqg" base_Element="_n_LbwL97Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.8."/>
+  <OpenModel_Profile:Reference xmi:id="_nvahYMA_Ee6xirORnB-xqg" base_Element="_AwgcwMA_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.7"/>
+  <OpenModel_Profile:Reference xmi:id="_Bbe28MBAEe6xirORnB-xqg" base_Element="_n_LbwL97Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.8"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WWV1YcBCEe6xirORnB-xqg" base_StructuralFeature="_WWV1YMBCEe6xirORnB-xqg" valueRange="0..12" unsigned="true" unit="minutes"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_WWZfwMBCEe6xirORnB-xqg" base_Property="_WWV1YMBCEe6xirORnB-xqg" bitLength="LENGTH_8_BIT"/>
-  <OpenModel_Profile:Reference xmi:id="_tlpNkMBCEe6xirORnB-xqg" base_Element="_WWV1YMBCEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.11."/>
+  <OpenModel_Profile:Reference xmi:id="_tlpNkMBCEe6xirORnB-xqg" base_Element="_WWV1YMBCEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.11"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_o8qa0MBDEe6xirORnB-xqg" base_StructuralFeature="_o8pzwMBDEe6xirORnB-xqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_o8teIMBDEe6xirORnB-xqg" base_Property="_o8pzwMBDEe6xirORnB-xqg"/>
-  <OpenModel_Profile:Reference xmi:id="_zFGDYMBDEe6xirORnB-xqg" base_Element="_o8pzwMBDEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.12."/>
-  <OpenModel_Profile:Reference xmi:id="_rp-gMMBEEe6xirORnB-xqg" base_Element="_GTej0AkpEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3."/>
-  <OpenModel_Profile:Reference xmi:id="_u_C-kMBEEe6xirORnB-xqg" base_Element="_utD-cAlwEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4."/>
+  <OpenModel_Profile:Reference xmi:id="_zFGDYMBDEe6xirORnB-xqg" base_Element="_o8pzwMBDEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.12"/>
+  <OpenModel_Profile:Reference xmi:id="_rp-gMMBEEe6xirORnB-xqg" base_Element="_GTej0AkpEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.3"/>
+  <OpenModel_Profile:Reference xmi:id="_u_C-kMBEEe6xirORnB-xqg" base_Element="_utD-cAlwEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__R6JEcBEEe6xirORnB-xqg" base_StructuralFeature="__R6JEMBEEe6xirORnB-xqg" unsigned="true" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="__R9zcMBEEe6xirORnB-xqg" base_Property="__R6JEMBEEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_BQy3ocBFEe6xirORnB-xqg" base_StructuralFeature="_BQy3oMBFEe6xirORnB-xqg" unsigned="true" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_BQ168MBFEe6xirORnB-xqg" base_Property="_BQy3oMBFEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GHuKUMBFEe6xirORnB-xqg" base_StructuralFeature="_GHtjQMBFEe6xirORnB-xqg" unit="per part billion (ppb)" support="OPTIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_GHxNoMBFEe6xirORnB-xqg" base_Property="_GHtjQMBFEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_16_BIT"/>
-  <OpenModel_Profile:Reference xmi:id="_TAoWcMBFEe6xirORnB-xqg" base_Element="__R6JEMBEEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.5; ITU-T G.8264 v3.2 (01/2024): table 11-5."/>
-  <OpenModel_Profile:Reference xmi:id="_eYuQEMBFEe6xirORnB-xqg" base_Element="_BQy3oMBFEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.6; ITU-T G.8264 v3.2 (01/2024): table 11-5."/>
-  <OpenModel_Profile:Reference xmi:id="_Frx_wMBGEe6xirORnB-xqg" base_Element="_GHtjQMBFEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.7 and clause 6.3.1."/>
-  <OpenModel_Profile:Reference xmi:id="_QfNGEMBGEe6xirORnB-xqg" base_Element="_VjeOYAlxEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5."/>
+  <OpenModel_Profile:Reference xmi:id="_TAoWcMBFEe6xirORnB-xqg" base_Element="__R6JEMBEEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.5; ITU-T G.8264 v3.2 (01/2024): table 11-5"/>
+  <OpenModel_Profile:Reference xmi:id="_eYuQEMBFEe6xirORnB-xqg" base_Element="_BQy3oMBFEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.6; ITU-T G.8264 v3.2 (01/2024): table 11-5"/>
+  <OpenModel_Profile:Reference xmi:id="_Frx_wMBGEe6xirORnB-xqg" base_Element="_GHtjQMBFEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.7 and clause 6.3.1"/>
+  <OpenModel_Profile:Reference xmi:id="_QfNGEMBGEe6xirORnB-xqg" base_Element="_VjeOYAlxEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dQm8AcBGEe6xirORnB-xqg" base_StructuralFeature="_dQm8AMBGEe6xirORnB-xqg" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_dQqmYMBGEe6xirORnB-xqg" base_Property="_dQm8AMBGEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fhGX8cBGEe6xirORnB-xqg" base_StructuralFeature="_fhGX8MBGEe6xirORnB-xqg" condition=""/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_fhKCUMBGEe6xirORnB-xqg" base_Property="_fhGX8MBGEe6xirORnB-xqg" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_ryWHIMBGEe6xirORnB-xqg" base_Element="_dQm8AMBGEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5.2 and figure 5-6."/>
-  <OpenModel_Profile:Reference xmi:id="_6awiAMBGEe6xirORnB-xqg" base_Element="_fhGX8MBGEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5.3 and figure 5-6."/>
+  <OpenModel_Profile:Reference xmi:id="_ryWHIMBGEe6xirORnB-xqg" base_Element="_dQm8AMBGEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5.2 and figure 5-6"/>
+  <OpenModel_Profile:Reference xmi:id="_6awiAMBGEe6xirORnB-xqg" base_Element="_fhGX8MBGEe6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.5.3 and figure 5-6"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_1wRD0MB9Ee6csOUPxtf2vA" base_Property="_1wQcwMB9Ee6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1wUuMMB9Ee6csOUPxtf2vA" base_StructuralFeature="_1wQcwMB9Ee6csOUPxtf2vA" isInvariant="true"/>
-  <OpenModel_Profile:Reference xmi:id="_AsDb8MB-Ee6csOUPxtf2vA" base_Element="_1wQcwMB9Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.1."/>
-  <OpenModel_Profile:Reference xmi:id="_J1Xw4MB-Ee6csOUPxtf2vA" base_Element="_o9WXsAlyEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6."/>
+  <OpenModel_Profile:Reference xmi:id="_AsDb8MB-Ee6csOUPxtf2vA" base_Element="_1wQcwMB9Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.1"/>
+  <OpenModel_Profile:Reference xmi:id="_J1Xw4MB-Ee6csOUPxtf2vA" base_Element="_o9WXsAlyEe6oAqE-At2_yg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_t8lPocB-Ee6csOUPxtf2vA" base_Property="_t8lPoMB-Ee6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_t8qIIMB-Ee6csOUPxtf2vA" base_StructuralFeature="_t8lPoMB-Ee6csOUPxtf2vA" isInvariant="true"/>
-  <OpenModel_Profile:Reference xmi:id="_GceF8MB_Ee6csOUPxtf2vA" base_Element="_t8lPoMB-Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.2."/>
+  <OpenModel_Profile:Reference xmi:id="_GceF8MB_Ee6csOUPxtf2vA" base_Element="_t8lPoMB-Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_OK-CsMB_Ee6csOUPxtf2vA" base_Property="_OK9boMB_Ee6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OLBtEMB_Ee6csOUPxtf2vA" base_StructuralFeature="_OK9boMB_Ee6csOUPxtf2vA"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_RtdSAMB_Ee6csOUPxtf2vA" base_Property="_Rtcq8MB_Ee6csOUPxtf2vA"/>
@@ -3603,46 +3603,46 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XJsRMMB_Ee6csOUPxtf2vA" base_StructuralFeature="_XJom0MB_Ee6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Z6IYgcB_Ee6csOUPxtf2vA" base_Property="_Z6IYgMB_Ee6csOUPxtf2vA" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Z6MC4MB_Ee6csOUPxtf2vA" base_StructuralFeature="_Z6IYgMB_Ee6csOUPxtf2vA" valueRange="" unsigned="true"/>
-  <OpenModel_Profile:Reference xmi:id="_0-Wz0MB_Ee6csOUPxtf2vA" base_Element="_OK9boMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.3."/>
-  <OpenModel_Profile:Reference xmi:id="_OEtNMMCAEe6csOUPxtf2vA" base_Element="_Rtcq8MB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.4."/>
-  <OpenModel_Profile:Reference xmi:id="_n58s4MCAEe6csOUPxtf2vA" base_Element="_UNtoQMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.5."/>
-  <OpenModel_Profile:Reference xmi:id="_96OGIMCAEe6csOUPxtf2vA" base_Element="_XJom0MB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.6."/>
-  <OpenModel_Profile:Reference xmi:id="_PZ9TcMCBEe6csOUPxtf2vA" base_Element="_Z6IYgMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.7 and Figure 5-6; ITU-T G.8264 v3.2 (01/2024): Figure A.2."/>
+  <OpenModel_Profile:Reference xmi:id="_0-Wz0MB_Ee6csOUPxtf2vA" base_Element="_OK9boMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.3"/>
+  <OpenModel_Profile:Reference xmi:id="_OEtNMMCAEe6csOUPxtf2vA" base_Element="_Rtcq8MB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.4"/>
+  <OpenModel_Profile:Reference xmi:id="_n58s4MCAEe6csOUPxtf2vA" base_Element="_UNtoQMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.5"/>
+  <OpenModel_Profile:Reference xmi:id="_96OGIMCAEe6csOUPxtf2vA" base_Element="_XJom0MB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.6"/>
+  <OpenModel_Profile:Reference xmi:id="_PZ9TcMCBEe6csOUPxtf2vA" base_Element="_Z6IYgMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.7 and Figure 5-6; ITU-T G.8264 v3.2 (01/2024): Figure A.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_mEVkMcCCEe6csOUPxtf2vA" base_Property="_mEVkMMCCEe6csOUPxtf2vA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mEZOkMCCEe6csOUPxtf2vA" base_StructuralFeature="_mEVkMMCCEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="It is only applicable to SyncPhy Ports that can be used as an input of Selector A of Figure A.2."/>
-  <OpenModel_Profile:Reference xmi:id="_8FqtYMCCEe6csOUPxtf2vA" base_Element="_mEVkMMCCEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8 and figure 5-6; ITU-T G.8264 v3.2 (01/2024): Figure A.2."/>
-  <OpenModel_Profile:Reference xmi:id="_UInJAMCDEe6csOUPxtf2vA" base_Element="_L3xaQL99Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8."/>
-  <OpenModel_Profile:Reference xmi:id="_sdoMEMCDEe6csOUPxtf2vA" base_Element="_YeiGcL99Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.9."/>
-  <OpenModel_Profile:Reference xmi:id="_lyTuIMCEEe6csOUPxtf2vA" base_Element="_RDO8wAJ1EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.10."/>
-  <OpenModel_Profile:Reference xmi:id="_8RDzIMCEEe6csOUPxtf2vA" base_Element="_RRW4UAJ1EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.11."/>
+  <OpenModel_Profile:Reference xmi:id="_8FqtYMCCEe6csOUPxtf2vA" base_Element="_mEVkMMCCEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8 and figure 5-6; ITU-T G.8264 v3.2 (01/2024): Figure A.2"/>
+  <OpenModel_Profile:Reference xmi:id="_UInJAMCDEe6csOUPxtf2vA" base_Element="_L3xaQL99Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8"/>
+  <OpenModel_Profile:Reference xmi:id="_sdoMEMCDEe6csOUPxtf2vA" base_Element="_YeiGcL99Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.9"/>
+  <OpenModel_Profile:Reference xmi:id="_lyTuIMCEEe6csOUPxtf2vA" base_Element="_RDO8wAJ1EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.10"/>
+  <OpenModel_Profile:Reference xmi:id="_8RDzIMCEEe6csOUPxtf2vA" base_Element="_RRW4UAJ1EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.11"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_BvE7AcCFEe6csOUPxtf2vA" base_Property="_BvE7AMCFEe6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_BvJMcMCFEe6csOUPxtf2vA" base_StructuralFeature="_BvE7AMCFEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:Reference xmi:id="_t6e5sMCFEe6csOUPxtf2vA" base_Element="_E7EboAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.13."/>
-  <OpenModel_Profile:Reference xmi:id="_6_b9wMCFEe6csOUPxtf2vA" base_Element="_JOmtsL9_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.14."/>
+  <OpenModel_Profile:Reference xmi:id="_t6e5sMCFEe6csOUPxtf2vA" base_Element="_E7EboAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.13"/>
+  <OpenModel_Profile:Reference xmi:id="_6_b9wMCFEe6csOUPxtf2vA" base_Element="_JOmtsL9_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.14"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_NVUI4MCGEe6csOUPxtf2vA" base_Class="_NVTh0MCGEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy protocol is implemented with at least one Station Clock Port."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_NVXzQMCGEe6csOUPxtf2vA" base_Class="_NVTh0MCGEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:Reference xmi:id="_d9VEAMCGEe6csOUPxtf2vA" base_Element="_NVTh0MCGEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3."/>
+  <OpenModel_Profile:Reference xmi:id="_d9VEAMCGEe6csOUPxtf2vA" base_Element="_NVTh0MCGEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ge5o4cCGEe6csOUPxtf2vA" base_Property="_ge5o4MCGEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ge9TQMCGEe6csOUPxtf2vA" base_StructuralFeature="_ge5o4MCGEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy Port is a Station Clock Port (portType=‘STATION_CLOCK’)"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ge9TQMCGEe6csOUPxtf2vA" base_StructuralFeature="_ge5o4MCGEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy Port is a Station Clock Port (portType='STATION_CLOCK')"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ge96UMCGEe6csOUPxtf2vA" base_Property="_ge9TQ8CGEe6csOUPxtf2vA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ge96UcCGEe6csOUPxtf2vA" base_StructuralFeature="_ge9TQ8CGEe6csOUPxtf2vA"/>
   <OpenModel_Profile:Cond xmi:id="_8lOaYMCGEe6csOUPxtf2vA" condition="When the SyncPhy Port is a Station Clock Port." base_Relationship="_gev34MCGEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:Reference xmi:id="_2b4oIMCHEe6csOUPxtf2vA" base_Element="_EeXRgAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.1."/>
-  <OpenModel_Profile:Reference xmi:id="_mqvOIMCIEe6csOUPxtf2vA" base_Element="_FOGFUAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.2."/>
+  <OpenModel_Profile:Reference xmi:id="_2b4oIMCHEe6csOUPxtf2vA" base_Element="_EeXRgAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.1"/>
+  <OpenModel_Profile:Reference xmi:id="_mqvOIMCIEe6csOUPxtf2vA" base_Element="_FOGFUAJ2EeetMLWdj1z_Ew" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_wz7rscCIEe6csOUPxtf2vA" base_Property="_wz7rsMCIEe6csOUPxtf2vA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wz-vAMCIEe6csOUPxtf2vA" base_StructuralFeature="_wz7rsMCIEe6csOUPxtf2vA"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_z5K-UcCIEe6csOUPxtf2vA" base_Property="_z5K-UMCIEe6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_z5PPwMCIEe6csOUPxtf2vA" base_StructuralFeature="_z5K-UMCIEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the extended QL Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_17YGocCIEe6csOUPxtf2vA" base_Property="_17YGoMCIEe6csOUPxtf2vA" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_17bJ8MCIEe6csOUPxtf2vA" base_StructuralFeature="_17YGoMCIEe6csOUPxtf2vA" condition=""/>
-  <OpenModel_Profile:Reference xmi:id="_W6fMAMCJEe6csOUPxtf2vA" base_Element="_wz7rsMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.3; ITU-T G.8264 v3.2 (01/2024): Figure A.2."/>
-  <OpenModel_Profile:Reference xmi:id="_jRfk8MCJEe6csOUPxtf2vA" base_Element="_z5K-UMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.5."/>
-  <OpenModel_Profile:Reference xmi:id="_wg2iMMCJEe6csOUPxtf2vA" base_Element="_17YGoMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.6."/>
+  <OpenModel_Profile:Reference xmi:id="_W6fMAMCJEe6csOUPxtf2vA" base_Element="_wz7rsMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.3; ITU-T G.8264 v3.2 (01/2024): Figure A.2"/>
+  <OpenModel_Profile:Reference xmi:id="_jRfk8MCJEe6csOUPxtf2vA" base_Element="_z5K-UMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.5"/>
+  <OpenModel_Profile:Reference xmi:id="_wg2iMMCJEe6csOUPxtf2vA" base_Element="_17YGoMCIEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.6"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_CTdBIMCKEe6csOUPxtf2vA" base_Class="_CTcaEMCKEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy protocol is implemented."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_CTfdYMCKEe6csOUPxtf2vA" base_Class="_CTcaEMCKEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:Reference xmi:id="_KFUa8MCKEe6csOUPxtf2vA" base_Element="_CTcaEMCKEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.4."/>
+  <OpenModel_Profile:Reference xmi:id="_KFUa8MCKEe6csOUPxtf2vA" base_Element="_CTcaEMCKEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.4"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_NXFtssCKEe6csOUPxtf2vA" base_Property="_NXFtscCKEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_NXIxAMCKEe6csOUPxtf2vA" base_StructuralFeature="_NXFtscCKEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy Port is a Line Clock Port (portType=‘LINE_CLOCK’)"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NXIxAMCKEe6csOUPxtf2vA" base_StructuralFeature="_NXFtscCKEe6csOUPxtf2vA" support="CONDITIONAL_MANDATORY" condition="When the SyncPhy Port is a Line Clock Port (portType='LINE_CLOCK')"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_NXJYEsCKEe6csOUPxtf2vA" base_Property="_NXJYEcCKEe6csOUPxtf2vA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NXJYE8CKEe6csOUPxtf2vA" base_StructuralFeature="_NXJYEcCKEe6csOUPxtf2vA"/>
   <OpenModel_Profile:Cond xmi:id="_efA38MCKEe6csOUPxtf2vA" condition="When the SyncPhy Port is a Line Clock Port." base_Relationship="_NXFGoMCKEe6csOUPxtf2vA"/>
@@ -3653,7 +3653,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_kIwhofKxEe6khsQrNUrTqg" base_Property="_kIwhoPKxEe6khsQrNUrTqg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kI0MAPKxEe6khsQrNUrTqg" base_StructuralFeature="_kIwhoPKxEe6khsQrNUrTqg" support="CONDITIONAL"/>
   <OpenModel_Profile:Reference xmi:id="_U2Kr4PKyEe6khsQrNUrTqg" base_Element="_kIwhoPKxEe6khsQrNUrTqg" reference="IEEE Std 1588-2019: clause 8.2.1.5.2."/>
-  <OpenModel_Profile:Reference xmi:id="_4it9APK0Ee6khsQrNUrTqg" base_Element="_McgzoAJREeegkdv_tKLxWg" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.2.3.1; ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.3.1; ITU-T G.8275.2 v4.0 (02/2026): clause 6.2.3.1."/>
+  <OpenModel_Profile:Reference xmi:id="_4it9APK0Ee6khsQrNUrTqg" base_Element="_McgzoAJREeegkdv_tKLxWg" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.2.3.1; ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.3.1; ITU-T G.8275.2 v4.0 (02/2026): clause 6.2.3.1"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_QV7TgfK1Ee6khsQrNUrTqg" base_Property="_QV7TgPK1Ee6khsQrNUrTqg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QV_k8PK1Ee6khsQrNUrTqg" base_StructuralFeature="_QV7TgPK1Ee6khsQrNUrTqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_lkntwAF6Ee-e29a165jOaw" base_Property="_lkfx8AF6Ee-e29a165jOaw" writeAllowed="WRITE_NOT_ALLOWED"/>
@@ -3665,7 +3665,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_-chUEQF9Ee-e29a165jOaw" base_Property="_-chUEAF9Ee-e29a165jOaw" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-cnasAF9Ee-e29a165jOaw" base_StructuralFeature="_-chUEAF9Ee-e29a165jOaw" unsigned="true" support="CONDITIONAL"/>
   <OpenModel_Profile:Reference xmi:id="_cgQYAAF_Ee-e29a165jOaw" base_Element="_-chUEAF9Ee-e29a165jOaw" reference="IEEE Std 1588-2019: clause 8.2.15.4.7."/>
-  <OpenModel_Profile:Reference xmi:id="_4ZhIcAGAEe-e29a165jOaw" base_Element="_QV7TgPK1Ee6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.1; ITU-T G.8275.1 v5.0 (02/2026): annex A.1; ITU-T G.8275.2 v4.0 (02/2026): annex A.1."/>
+  <OpenModel_Profile:Reference xmi:id="_4ZhIcAGAEe-e29a165jOaw" base_Element="_QV7TgPK1Ee6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.1; ITU-T G.8275.1 v5.0 (02/2026): annex A.1; ITU-T G.8275.2 v4.0 (02/2026): annex A.1"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_GPgycAGCEe-e29a165jOaw" base_Property="_GPgLYAGCEe-e29a165jOaw" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GPlD4AGCEe-e29a165jOaw" base_StructuralFeature="_GPgLYAGCEe-e29a165jOaw" unsigned="true" support="CONDITIONAL" condition=""/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_I1AOAQGCEe-e29a165jOaw" base_Property="_I1AOAAGCEe-e29a165jOaw" bitLength="LENGTH_16_BIT"/>
@@ -3680,16 +3680,16 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WfQ-kAGCEe-e29a165jOaw" base_StructuralFeature="_WfK38AGCEe-e29a165jOaw" support="CONDITIONAL" condition=""/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_aSCsoAGCEe-e29a165jOaw" base_Property="_aSCFkAGCEe-e29a165jOaw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aSJaUAGCEe-e29a165jOaw" base_StructuralFeature="_aSCFkAGCEe-e29a165jOaw" support="CONDITIONAL" condition=""/>
-  <OpenModel_Profile:Reference xmi:id="_6kZZsAGCEe-e29a165jOaw" base_Element="_GPgLYAGCEe-e29a165jOaw" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.7.3.2; ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11."/>
-  <OpenModel_Profile:Reference xmi:id="_NtMPgAGDEe-e29a165jOaw" base_Element="_I1AOAAGCEe-e29a165jOaw" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.7.3.2; ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11."/>
-  <OpenModel_Profile:Reference xmi:id="_XPFcgAGDEe-e29a165jOaw" base_Element="_Lcd_gAGCEe-e29a165jOaw" reference="ITU-T G.8275 v5.0 (01/2026): annex E."/>
+  <OpenModel_Profile:Reference xmi:id="_6kZZsAGCEe-e29a165jOaw" base_Element="_GPgLYAGCEe-e29a165jOaw" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.7.3.2; ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11"/>
+  <OpenModel_Profile:Reference xmi:id="_NtMPgAGDEe-e29a165jOaw" base_Element="_I1AOAAGCEe-e29a165jOaw" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.7.3.2; ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.11"/>
+  <OpenModel_Profile:Reference xmi:id="_XPFcgAGDEe-e29a165jOaw" base_Element="_Lcd_gAGCEe-e29a165jOaw" reference="ITU-T G.8275 v5.0 (01/2026): annex E"/>
   <OpenModel_Profile:Reference xmi:id="_niLQgAGDEe-e29a165jOaw" base_Element="_OEubMAGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): annex G."/>
   <OpenModel_Profile:Reference xmi:id="_37OikAGDEe-e29a165jOaw" base_Element="_Qg47oAGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): annex G."/>
-  <OpenModel_Profile:Reference xmi:id="_g764wAGEEe-e29a165jOaw" base_Element="_WfK38AGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9."/>
-  <OpenModel_Profile:Reference xmi:id="_0G9KQAGEEe-e29a165jOaw" base_Element="_aSCFkAGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9."/>
+  <OpenModel_Profile:Reference xmi:id="_g764wAGEEe-e29a165jOaw" base_Element="_WfK38AGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9"/>
+  <OpenModel_Profile:Reference xmi:id="_0G9KQAGEEe-e29a165jOaw" base_Element="_aSCFkAGCEe-e29a165jOaw" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IuV64BIhEe-aAcddIn44RQ" base_StructuralFeature="_IuVT0BIhEe-aAcddIn44RQ" support="CONDITIONAL" condition=""/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_IuZlQBIhEe-aAcddIn44RQ" base_Property="_IuVT0BIhEe-aAcddIn44RQ" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_zOv64BIiEe-aAcddIn44RQ" base_Element="_IuVT0BIhEe-aAcddIn44RQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9."/>
+  <OpenModel_Profile:Reference xmi:id="_zOv64BIiEe-aAcddIn44RQ" base_Element="_IuVT0BIhEe-aAcddIn44RQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.9"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_kLkaIRIjEe-aAcddIn44RQ" base_Class="_kLkaIBIjEe-aAcddIn44RQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_kLoEgBIjEe-aAcddIn44RQ" base_Class="_kLkaIBIjEe-aAcddIn44RQ" support="CONDITIONAL"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wSr88RIjEe-aAcddIn44RQ" base_StructuralFeature="_wSr88BIjEe-aAcddIn44RQ"/>
@@ -3699,17 +3699,17 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:ExtendedComposite xmi:id="_5ga30BIjEe-aAcddIn44RQ" base_Association="_wShk4BIjEe-aAcddIn44RQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_90xo8hIjEe-aAcddIn44RQ" base_StructuralFeature="_90xo8BIjEe-aAcddIn44RQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_900sQBIjEe-aAcddIn44RQ" base_Property="_90xo8BIjEe-aAcddIn44RQ"/>
-  <OpenModel_Profile:Reference xmi:id="_905kwBIjEe-aAcddIn44RQ" base_Element="_90xo8BIjEe-aAcddIn44RQ" reference=" ITU-T G.8275.1 v5.0 (02/2026): annex A.1"/>
-  <OpenModel_Profile:Reference xmi:id="_IPIH8BIkEe-aAcddIn44RQ" base_Element="_kLkaIBIjEe-aAcddIn44RQ" reference="ITU-T G.8275.1 v5.0 (02/2026): table A.6."/>
+  <OpenModel_Profile:Reference xmi:id="_905kwBIjEe-aAcddIn44RQ" base_Element="_90xo8BIjEe-aAcddIn44RQ" reference="ITU-T G.8275.1 v5.0 (02/2026): annex A.1"/>
+  <OpenModel_Profile:Reference xmi:id="_IPIH8BIkEe-aAcddIn44RQ" base_Element="_kLkaIBIjEe-aAcddIn44RQ" reference="ITU-T G.8275.1 v5.0 (02/2026): table A.6"/>
   <OpenModel_Profile:Preliminary xmi:id="_SRkdQBIkEe-aAcddIn44RQ" base_Element="_90xo8BIjEe-aAcddIn44RQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GlLAMhInEe-aAcddIn44RQ" base_StructuralFeature="_GlLAMBInEe-aAcddIn44RQ" isInvariant="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_GlOqkBInEe-aAcddIn44RQ" base_Property="_GlLAMBInEe-aAcddIn44RQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:Reference xmi:id="_GlQfwBInEe-aAcddIn44RQ" base_Element="_GlLAMBInEe-aAcddIn44RQ" reference="IEEE Std 1588-2008: clause 8.3.3.2.1; IEEE Std 1588-2019: clause 8.3.3.2.1."/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mSFd4RInEe-aAcddIn44RQ" base_StructuralFeature="_mSFd4BInEe-aAcddIn44RQ" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_mSJvUBInEe-aAcddIn44RQ" base_Property="_mSFd4BInEe-aAcddIn44RQ" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_uGKegRInEe-aAcddIn44RQ" base_Element="_mSFd4BInEe-aAcddIn44RQ" reference="IEEE Std 1588-2008: clause 8.3.3.3.2; IEEE Std 1588-2019: clause 8.3.3.3.2."/>
+  <OpenModel_Profile:Reference xmi:id="_uGKegRInEe-aAcddIn44RQ" base_Element="_mSFd4BInEe-aAcddIn44RQ" reference="IEEE Std 1588-2008: clause 8.3.3.3.2; IEEE Std 1588-2019: clause 8.3.3.3.2"/>
   <OpenModel_Profile:Preliminary xmi:id="_6J7yEBInEe-aAcddIn44RQ" base_Element="_McgzoAJREeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_OhCOEBIoEe-aAcddIn44RQ" base_Element="_F-cUoG1kEeydFovuecmELg" reference="IEEE Std 1588-20192008: clause 8.3.2; IEEE Std 1588-2019: clause 8.3.2."/>
+  <OpenModel_Profile:Reference xmi:id="_OhCOEBIoEe-aAcddIn44RQ" base_Element="_F-cUoG1kEeydFovuecmELg" reference="IEEE Std 1588-2019: clause 8.3.2; IEEE Std 1588-2019: clause 8.3.2."/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_V0Yf4xIoEe-aAcddIn44RQ" base_StructuralFeature="_V0Yf4BIoEe-aAcddIn44RQ" isInvariant="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_V0cKQBIoEe-aAcddIn44RQ" base_Property="_V0Yf4BIoEe-aAcddIn44RQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:Reference xmi:id="_V0dYYBIoEe-aAcddIn44RQ" base_Element="_V0Yf4BIoEe-aAcddIn44RQ" reference="IEEE Std 1588-2008: clause 8.3.2.2.1; IEEE Std 1588-2019: clause 8.3.2.2.1."/>
@@ -3726,7 +3726,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_425tcCffEe-H1ayHa5LfVQ" base_StructuralFeature="_423RMCffEe-H1ayHa5LfVQ" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_43C3YCffEe-H1ayHa5LfVQ" base_Property="_423RMCffEe-H1ayHa5LfVQ" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:Reference xmi:id="_RtCgkCfgEe-H1ayHa5LfVQ" base_Element="_423RMCffEe-H1ayHa5LfVQ" reference="IEEE Std 1588-2019: clause 8.2.15.4.6."/>
-  <OpenModel_Profile:Reference xmi:id="_riGqACf0Ee-fD8T5_i29WA" base_Element="_Pym68D15Ee26VY7FQl4S4g" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.2; ITU-T G.8275.1 v5.0 (02/2026): annex A.2; ITU-T G.8275.2 v4.0 (02/2026): annex A.2."/>
+  <OpenModel_Profile:Reference xmi:id="_riGqACf0Ee-fD8T5_i29WA" base_Element="_Pym68D15Ee26VY7FQl4S4g" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.2; ITU-T G.8275.1 v5.0 (02/2026): annex A.2; ITU-T G.8275.2 v4.0 (02/2026): annex A.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_pE20gjx5Ee-nEP0EFGHiZg" base_Property="_pE20gDx5Ee-nEP0EFGHiZg" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pE9iMDx5Ee-nEP0EFGHiZg" base_StructuralFeature="_pE20gDx5Ee-nEP0EFGHiZg" unsigned="true" unit="minutes" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_pE-wUDx5Ee-nEP0EFGHiZg" base_Property="_pE-JQDx5Ee-nEP0EFGHiZg" bitLength="LENGTH_16_BIT"/>
@@ -3749,8 +3749,8 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:Reference xmi:id="_3gjKkDyQEe-nEP0EFGHiZg" base_Element="_pFAlgDx5Ee-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.4; ITU-T G.8275.2 v4.0 (02/2026): clause 6.8"/>
   <OpenModel_Profile:Reference xmi:id="_4QxGkDyQEe-nEP0EFGHiZg" base_Element="_pFBzoDx5Ee-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.10; ITU-T G.8275.2 v4.0 (02/2026): clasue 6.7.12"/>
   <OpenModel_Profile:Reference xmi:id="_6EDpIDyQEe-nEP0EFGHiZg" base_Element="_VPWLMDyQEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.10"/>
-  <OpenModel_Profile:Reference xmi:id="_6w8kUDyQEe-nEP0EFGHiZg" base_Element="_VPXZUDyQEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.11."/>
-  <OpenModel_Profile:Reference xmi:id="_8mGvIDyQEe-nEP0EFGHiZg" base_Element="_kwzt8DyQEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.12."/>
+  <OpenModel_Profile:Reference xmi:id="_6w8kUDyQEe-nEP0EFGHiZg" base_Element="_VPXZUDyQEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.11"/>
+  <OpenModel_Profile:Reference xmi:id="_8mGvIDyQEe-nEP0EFGHiZg" base_Element="_kwzt8DyQEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.12"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_rqREQFSmEe-VEb2VLyaWkw" base_Class="_OWRuoAJyEeetMLWdj1z_Ew"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_rqSSYFSmEe-VEb2VLyaWkw" base_Class="_PUaK0AJyEeetMLWdj1z_Ew"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_rqUHkFSmEe-VEb2VLyaWkw" base_Class="_PXn24AJyEeetMLWdj1z_Ew"/>
@@ -3950,7 +3950,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_rwKQ4FSmEe-VEb2VLyaWkw" base_Property="_wSw1chIjEe-aAcddIn44RQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_rwMtIFSmEe-VEb2VLyaWkw" base_Property="_wSr88BIjEe-aAcddIn44RQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_YSXwgFVsEe-vhtZ4QIn_Zw" base_Element="_RJumIAJQEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_Ni9GYFXuEe-vhtZ4QIn_Zw" base_Element="_iiPfwK9kEeyhFvM20gSYXA" reference="ITU-T G.8265.1 v4.1 (08/2024): table A.1; ITU-T G.8275.1 v5.0 (02/2026): table A.1; ITU-T G.8275.2 v4.0 (02/2026): table A.1."/>
+  <OpenModel_Profile:Reference xmi:id="_Ni9GYFXuEe-vhtZ4QIn_Zw" base_Element="_iiPfwK9kEeyhFvM20gSYXA" reference="ITU-T G.8265.1 v4.1 (08/2024): table A.1; ITU-T G.8275.1 v5.0 (02/2026): table A.1; ITU-T G.8275.2 v4.0 (02/2026): table A.1"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nCakAI9tEe-lbv_Bmlne1g" base_StructuralFeature="_NohcsAeUEeeSr90X-zum4Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_nCbLEI9tEe-lbv_Bmlne1g" base_Property="_NohcsAeUEeeSr90X-zum4Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nChRsI9tEe-lbv_Bmlne1g" base_StructuralFeature="_S0LesAeTEeeSr90X-zum4Q"/>
@@ -4011,123 +4011,123 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_2PZrkI9tEe-lbv_Bmlne1g" base_Property="_2POFYY9tEe-lbv_Bmlne1g"/>
   <OpenModel_Profile:Choice xmi:id="_XPCowJFYEe-bI5zn3ne_IQ" base_DataType="_Yf7i8K-IEeyhFvM20gSYXA"/>
   <OpenModel_Profile:Choice xmi:id="_cyb_4JFYEe-bI5zn3ne_IQ" base_DataType="_2POFYI9tEe-lbv_Bmlne1g"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_lsHWkMtREe-IysdZWZ9W1Q" base_StructuralFeature="_lsGvgMtREe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When the switch selection type is forced (sourceSwitchType is set to ‘FORCED’)"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lsHWkMtREe-IysdZWZ9W1Q" base_StructuralFeature="_lsGvgMtREe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When the switch selection type is forced (sourceSwitchType is set to 'FORCED')"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_lsVZAMtREe-IysdZWZ9W1Q" base_Property="_lsGvgMtREe-IysdZWZ9W1Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lsXOMMtREe-IysdZWZ9W1Q" base_StructuralFeature="_lsWnIctREe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_lsXOMctREe-IysdZWZ9W1Q" base_Property="_lsWnIctREe-IysdZWZ9W1Q"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_lSECY8tSEe-IysdZWZ9W1Q" base_StructuralFeature="_lSECYstSEe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When the switch selection type is manual (sourceSwitchType is set to ‘MANUAL’)."/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lSECY8tSEe-IysdZWZ9W1Q" base_StructuralFeature="_lSECYstSEe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When the switch selection type is manual (sourceSwitchType is set to 'MANUAL')."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_lSPokMtSEe-IysdZWZ9W1Q" base_Property="_lSECYstSEe-IysdZWZ9W1Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lSRdwMtSEe-IysdZWZ9W1Q" base_StructuralFeature="_lSQ2sMtSEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_lSRdwctSEe-IysdZWZ9W1Q" base_Property="_lSQ2sMtSEe-IysdZWZ9W1Q"/>
-  <OpenModel_Profile:Reference xmi:id="_CQ4iIMtTEe-IysdZWZ9W1Q" base_Element="_lsGvgMtREe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.9."/>
-  <OpenModel_Profile:Reference xmi:id="_Dy3c0MtUEe-IysdZWZ9W1Q" base_Element="_lSECYstSEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.10."/>
-  <OpenModel_Profile:Reference xmi:id="_7aqw4MtVEe-IysdZWZ9W1Q" base_Element="_Yj0dwMA7Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.2.1; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3."/>
-  <OpenModel_Profile:Reference xmi:id="_IMFN4MtWEe-IysdZWZ9W1Q" base_Element="_SCN1IMA_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.5."/>
-  <OpenModel_Profile:Reference xmi:id="_kodH4MtWEe-IysdZWZ9W1Q" base_Element="_h3DcUMA-Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.4."/>
-  <OpenModel_Profile:Reference xmi:id="_LQGjEMtXEe-IysdZWZ9W1Q" base_Element="_uXQqAMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.3."/>
+  <OpenModel_Profile:Reference xmi:id="_CQ4iIMtTEe-IysdZWZ9W1Q" base_Element="_lsGvgMtREe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.9"/>
+  <OpenModel_Profile:Reference xmi:id="_Dy3c0MtUEe-IysdZWZ9W1Q" base_Element="_lSECYstSEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.10"/>
+  <OpenModel_Profile:Reference xmi:id="_7aqw4MtVEe-IysdZWZ9W1Q" base_Element="_Yj0dwMA7Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): annex B.2.1; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3"/>
+  <OpenModel_Profile:Reference xmi:id="_IMFN4MtWEe-IysdZWZ9W1Q" base_Element="_SCN1IMA_Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.5"/>
+  <OpenModel_Profile:Reference xmi:id="_kodH4MtWEe-IysdZWZ9W1Q" base_Element="_h3DcUMA-Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.4"/>
+  <OpenModel_Profile:Reference xmi:id="_LQGjEMtXEe-IysdZWZ9W1Q" base_Element="_uXQqAMA9Ee6xirORnB-xqg" reference="ITU-T G.781 v6.0 (01/2026): table B.3"/>
   <OpenModel_Profile:Choice xmi:id="_ucFvsMtXEe-IysdZWZ9W1Q" base_DataType="_m1DF0MtXEe-IysdZWZ9W1Q"/>
-  <OpenModel_Profile:Reference xmi:id="_ucWOYMtXEe-IysdZWZ9W1Q" base_Element="_m1DF0MtXEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.2.2."/>
-  <OpenModel_Profile:Reference xmi:id="_HXWTYMtYEe-IysdZWZ9W1Q" base_Element="_BGMeYMtYEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1; clause 5.4.1.1 and clause 5.4.2.1."/>
-  <OpenModel_Profile:Reference xmi:id="_8csuQMtYEe-IysdZWZ9W1Q" base_Element="_8cAxwMtYEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1; clause 5.4.1.2 and clause 5.4.2.2."/>
-  <OpenModel_Profile:Reference xmi:id="_CBl6MMtZEe-IysdZWZ9W1Q" base_Element="_CBDusMtZEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1; clause 5.4.1.3 and clause 5.4.2.3."/>
+  <OpenModel_Profile:Reference xmi:id="_ucWOYMtXEe-IysdZWZ9W1Q" base_Element="_m1DF0MtXEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.2.2"/>
+  <OpenModel_Profile:Reference xmi:id="_HXWTYMtYEe-IysdZWZ9W1Q" base_Element="_BGMeYMtYEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1, clause 5.4.1.1 and clause 5.4.2.1."/>
+  <OpenModel_Profile:Reference xmi:id="_8csuQMtYEe-IysdZWZ9W1Q" base_Element="_8cAxwMtYEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1, clause 5.4.1.2 and clause 5.4.2.2"/>
+  <OpenModel_Profile:Reference xmi:id="_CBl6MMtZEe-IysdZWZ9W1Q" base_Element="_CBDusMtZEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): table B.1, clause 5.4.1.3 and clause 5.4.2.3"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2NJJ0MtaEe-IysdZWZ9W1Q" base_StructuralFeature="_2NIiwMtaEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_2NUI8MtaEe-IysdZWZ9W1Q" base_Property="_2NIiwMtaEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_94K70ctaEe-IysdZWZ9W1Q" base_StructuralFeature="_94K70MtaEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_94azcMtaEe-IysdZWZ9W1Q" base_Property="_94K70MtaEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DlY9UctbEe-IysdZWZ9W1Q" base_StructuralFeature="_DlY9UMtbEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Dlj8cMtbEe-IysdZWZ9W1Q" base_Property="_DlY9UMtbEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_dt_d4MtbEe-IysdZWZ9W1Q" base_Element="_w08yYAeNEeeSr90X-zum4Q" reference="ITU-T G.781 v6.0 (01/2026): table B.6."/>
+  <OpenModel_Profile:Reference xmi:id="_dt_d4MtbEe-IysdZWZ9W1Q" base_Element="_w08yYAeNEeeSr90X-zum4Q" reference="ITU-T G.781 v6.0 (01/2026): table B.6"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pwbfkstcEe-IysdZWZ9W1Q" base_StructuralFeature="_pwbfkctcEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_pw3kcMtcEe-IysdZWZ9W1Q" base_Property="_pwbfkctcEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pw4ykMtcEe-IysdZWZ9W1Q" base_StructuralFeature="_pw4LgstcEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_pw4ykctcEe-IysdZWZ9W1Q" base_Property="_pw4LgstcEe-IysdZWZ9W1Q"/>
-  <OpenModel_Profile:Reference xmi:id="_YHePYMtdEe-IysdZWZ9W1Q" base_Element="_pwbfkctcEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.2."/>
+  <OpenModel_Profile:Reference xmi:id="_YHePYMtdEe-IysdZWZ9W1Q" base_Element="_pwbfkctcEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.2"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qTTtsstdEe-IysdZWZ9W1Q" base_StructuralFeature="_qTTtsMtdEe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_qTf68MtdEe-IysdZWZ9W1Q" base_Property="_qTTtsMtdEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="_xVqWIMtdEe-IysdZWZ9W1Q" base_Element="_qTTtsMtdEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.3 and clause 6; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3."/>
+  <OpenModel_Profile:Reference xmi:id="_xVqWIMtdEe-IysdZWZ9W1Q" base_Element="_qTTtsMtdEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.3 and clause 6; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_43AAostdEe-IysdZWZ9W1Q" base_StructuralFeature="_43AAoMtdEe-IysdZWZ9W1Q" support="CONDITIONAL_MANDATORY" condition="When extended Quality Level (eQL) TLV is implemented on the node."/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_43MN4MtdEe-IysdZWZ9W1Q" base_Property="_43AAoMtdEe-IysdZWZ9W1Q" writeAllowed="WRITE_NOT_ALLOWED"/>
-  <OpenModel_Profile:Reference xmi:id="__E000MtdEe-IysdZWZ9W1Q" base_Element="_43AAoMtdEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.4 and clause 6; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3."/>
-  <OpenModel_Profile:Reference xmi:id="_1OgdsMtiEe-IysdZWZ9W1Q" base_Element="_ge5o4MCGEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3."/>
-  <OpenModel_Profile:Reference xmi:id="_9bLkMMtiEe-IysdZWZ9W1Q" base_Element="_NXFtscCKEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.4."/>
-  <OpenModel_Profile:Reference xmi:id="_M0PY4MtjEe-IysdZWZ9W1Q" base_Element="_mQHdwMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.8."/>
-  <OpenModel_Profile:Reference xmi:id="_ftO4IMtjEe-IysdZWZ9W1Q" base_Element="_zSI_EMB-Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.7."/>
-  <OpenModel_Profile:Reference xmi:id="_uDoV8MtjEe-IysdZWZ9W1Q" base_Element="_t1zx4MCBEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8."/>
+  <OpenModel_Profile:Reference xmi:id="__E000MtdEe-IysdZWZ9W1Q" base_Element="_43AAoMtdEe-IysdZWZ9W1Q" reference="ITU-T G.781 v6.0 (01/2026): annex B.4.4 and clause 6; ITU-T G.8264 v3.2 (01/2024): clause 11.3.1.3"/>
+  <OpenModel_Profile:Reference xmi:id="_1OgdsMtiEe-IysdZWZ9W1Q" base_Element="_ge5o4MCGEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3"/>
+  <OpenModel_Profile:Reference xmi:id="_9bLkMMtiEe-IysdZWZ9W1Q" base_Element="_NXFtscCKEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.4"/>
+  <OpenModel_Profile:Reference xmi:id="_M0PY4MtjEe-IysdZWZ9W1Q" base_Element="_mQHdwMB_Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.8"/>
+  <OpenModel_Profile:Reference xmi:id="_ftO4IMtjEe-IysdZWZ9W1Q" base_Element="_zSI_EMB-Ee6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.7"/>
+  <OpenModel_Profile:Reference xmi:id="_uDoV8MtjEe-IysdZWZ9W1Q" base_Element="_t1zx4MCBEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.8"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sE5tgMtlEe-IysdZWZ9W1Q" base_StructuralFeature="_sE5GcctlEe-IysdZWZ9W1Q" partOfObjectKey="1"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_sFTWIMtlEe-IysdZWZ9W1Q" base_Property="_sE5GcctlEe-IysdZWZ9W1Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sFUkQstlEe-IysdZWZ9W1Q" base_StructuralFeature="_sFUkQctlEe-IysdZWZ9W1Q"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_sFVLUMtlEe-IysdZWZ9W1Q" base_Property="_sFUkQctlEe-IysdZWZ9W1Q"/>
-  <OpenModel_Profile:Reference xmi:id="_oZt_wMtmEe-IysdZWZ9W1Q" base_Element="_wk_DwAeNEeeSr90X-zum4Q" reference="ITU-T G.781 v6.0 (01/2026): table B.9."/>
+  <OpenModel_Profile:Reference xmi:id="_oZt_wMtmEe-IysdZWZ9W1Q" base_Element="_wk_DwAeNEeeSr90X-zum4Q" reference="ITU-T G.781 v6.0 (01/2026): table B.9"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_SXBtcdcTEe-Bf-TquHP_2A" base_Property="_SXBtcNcTEe-Bf-TquHP_2A" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_SXMFgNcTEe-Bf-TquHP_2A" base_StructuralFeature="_SXBtcNcTEe-Bf-TquHP_2A"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_SXYSwNcTEe-Bf-TquHP_2A" base_Property="_SXXrsNcTEe-Bf-TquHP_2A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_SXYSwdcTEe-Bf-TquHP_2A" base_StructuralFeature="_SXXrsNcTEe-Bf-TquHP_2A"/>
   <OpenModel_Profile:Reference xmi:id="_0gCV4NfeEe-gQM5lFBaDag" base_Element="_SXBtcNcTEe-Bf-TquHP_2A" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.3.4"/>
-  <OpenModel_Profile:Reference xmi:id="_EynXENfgEe-gQM5lFBaDag" base_Element="_TlCSUAJNEeegkdv_tKLxWg" reference="ITU-T G.781 v6.0 (01/2026): table B.12."/>
-  <OpenModel_Profile:Reference xmi:id="_XU0uANfgEe-gQM5lFBaDag" base_Element="_AyXeUMCJEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.12; ITU-T G.8264 v3.2 (01/2024): Figure A.2."/>
+  <OpenModel_Profile:Reference xmi:id="_EynXENfgEe-gQM5lFBaDag" base_Element="_TlCSUAJNEeegkdv_tKLxWg" reference="ITU-T G.781 v6.0 (01/2026): table B.12"/>
+  <OpenModel_Profile:Reference xmi:id="_XU0uANfgEe-gQM5lFBaDag" base_Element="_AyXeUMCJEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): table B.12; ITU-T G.8264 v3.2 (01/2024): Figure A.2"/>
   <OpenModel_Profile:Experimental xmi:id="_msBN0OOOEe-0hKspIKMEWA" base_Element="_yoQe4AeUEeeSr90X-zum4Q"/>
-  <OpenModel_Profile:Reference xmi:id="_tgw4EOOOEe-0hKspIKMEWA" base_Element="_ogHG8PKyEe6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.2.3.1."/>
-  <OpenModel_Profile:Reference xmi:id="_zNZDsOOOEe-0hKspIKMEWA" base_Element="_oZ80UDyPEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): table 4."/>
-  <OpenModel_Profile:Reference xmi:id="_45ecwOOOEe-0hKspIKMEWA" base_Element="_oZ80UjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)."/>
-  <OpenModel_Profile:Reference xmi:id="_7WB-wOOOEe-0hKspIKMEWA" base_Element="_oZ80VDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)."/>
+  <OpenModel_Profile:Reference xmi:id="_tgw4EOOOEe-0hKspIKMEWA" base_Element="_ogHG8PKyEe6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): clause 6.2.3.1"/>
+  <OpenModel_Profile:Reference xmi:id="_zNZDsOOOEe-0hKspIKMEWA" base_Element="_oZ80UDyPEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): table 4"/>
+  <OpenModel_Profile:Reference xmi:id="_45ecwOOOEe-0hKspIKMEWA" base_Element="_oZ80UjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)"/>
+  <OpenModel_Profile:Reference xmi:id="_7WB-wOOOEe-0hKspIKMEWA" base_Element="_oZ80VDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)"/>
   <OpenModel_Profile:Reference xmi:id="_9rT0EOOOEe-0hKspIKMEWA" base_Element="_oZ80VjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.1 v2.0 (01/2024)"/>
-  <OpenModel_Profile:Reference xmi:id="__uRxYOOOEe-0hKspIKMEWA" base_Element="_oZ80WDyPEe-nEP0EFGHiZg" reference="TU-T G.8272.2 v1.0 (01/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="__uRxYOOOEe-0hKspIKMEWA" base_Element="_oZ80WDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.2 v1.0 (01/2024)"/>
   <OpenModel_Profile:Reference xmi:id="_B0Au0OOPEe-0hKspIKMEWA" base_Element="_oZ80WjyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)"/>
   <OpenModel_Profile:Reference xmi:id="_DwlwQOOPEe-0hKspIKMEWA" base_Element="_oZ80XDyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)"/>
-  <OpenModel_Profile:Reference xmi:id="_F9BLkOOPEe-0hKspIKMEWA" base_Element="_oZ80XjyPEe-nEP0EFGHiZg" reference="TU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_F9BLkOOPEe-0hKspIKMEWA" base_Element="_oZ80XjyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024)"/>
   <OpenModel_Profile:Reference xmi:id="_ICnmIOOPEe-0hKspIKMEWA" base_Element="_oZ80YDyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024)"/>
-  <OpenModel_Profile:Reference xmi:id="_Oi41MOOPEe-0hKspIKMEWA" base_Element="_Yf9_MK-IEeyhFvM20gSYXA" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.3.1."/>
-  <OpenModel_Profile:Reference xmi:id="_SNgFwOOPEe-0hKspIKMEWA" base_Element="_oZ9bYDyPEe-nEP0EFGHiZg" reference="ITU-T G.8275.2 v4.0 (02/2026): table 7."/>
-  <OpenModel_Profile:Reference xmi:id="_VUcBgOOPEe-0hKspIKMEWA" base_Element="_oZ9bYjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)."/>
-  <OpenModel_Profile:Reference xmi:id="_W3ZpEOOPEe-0hKspIKMEWA" base_Element="_oZ9bZDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)."/>
-  <OpenModel_Profile:Reference xmi:id="_Z78YIOOPEe-0hKspIKMEWA" base_Element="_oZ9bZjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.1 v2.0 (01/2024)."/>
-  <OpenModel_Profile:Reference xmi:id="_btMTUOOPEe-0hKspIKMEWA" base_Element="_oZ9baDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.2 v1.0 (01/2024)."/>
-  <OpenModel_Profile:Reference xmi:id="_eGQccOOPEe-0hKspIKMEWA" base_Element="_oZ9bajyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)."/>
-  <OpenModel_Profile:Reference xmi:id="_gUbkMOOPEe-0hKspIKMEWA" base_Element="_oZ9bbDyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)."/>
-  <OpenModel_Profile:Reference xmi:id="_js0cUOOPEe-0hKspIKMEWA" base_Element="_Yf_NUK-IEeyhFvM20gSYXA" reference="ITU-T G.8275.2 v4.0 (02/2026): clause 6.2.3.1."/>
+  <OpenModel_Profile:Reference xmi:id="_Oi41MOOPEe-0hKspIKMEWA" base_Element="_Yf9_MK-IEeyhFvM20gSYXA" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.3.1"/>
+  <OpenModel_Profile:Reference xmi:id="_SNgFwOOPEe-0hKspIKMEWA" base_Element="_oZ9bYDyPEe-nEP0EFGHiZg" reference="ITU-T G.8275.2 v4.0 (02/2026): table 7"/>
+  <OpenModel_Profile:Reference xmi:id="_VUcBgOOPEe-0hKspIKMEWA" base_Element="_oZ9bYjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)"/>
+  <OpenModel_Profile:Reference xmi:id="_W3ZpEOOPEe-0hKspIKMEWA" base_Element="_oZ9bZDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272 v3.2 (11/2022)"/>
+  <OpenModel_Profile:Reference xmi:id="_Z78YIOOPEe-0hKspIKMEWA" base_Element="_oZ9bZjyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.1 v2.0 (01/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_btMTUOOPEe-0hKspIKMEWA" base_Element="_oZ9baDyPEe-nEP0EFGHiZg" reference="ITU-T G.8272.2 v1.0 (01/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_eGQccOOPEe-0hKspIKMEWA" base_Element="_oZ9bajyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_gUbkMOOPEe-0hKspIKMEWA" base_Element="_oZ9bbDyPEe-nEP0EFGHiZg" reference="ITU-T G.8273.2 v5.1 (08/2024); ITU-T G.8273.3 v2.1 (08/2024); ITU-T G.8273.4 v2.0 (08/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_js0cUOOPEe-0hKspIKMEWA" base_Element="_Yf_NUK-IEeyhFvM20gSYXA" reference="ITU-T G.8275.2 v4.0 (02/2026): clause 6.2.3.1"/>
   <OpenModel_Profile:Reference xmi:id="_nc1KQOOPEe-0hKspIKMEWA" base_Element="_lmgmsI9tEe-lbv_Bmlne1g" reference="ITU-T G.8275.1 v5.0 (02/2026): table 3; ITU-T G.8275.2 v4.0 (02/2026): table 6"/>
-  <OpenModel_Profile:Reference xmi:id="_rInfgOOPEe-0hKspIKMEWA" base_Element="_XAda8Dx5Ee-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): table 5."/>
+  <OpenModel_Profile:Reference xmi:id="_rInfgOOPEe-0hKspIKMEWA" base_Element="_XAda8Dx5Ee-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): table 5"/>
   <OpenModel_Profile:Experimental xmi:id="_xK7nQOOPEe-0hKspIKMEWA" base_Element="_wy484AeNEeeSr90X-zum4Q"/>
   <OpenModel_Profile:Reference xmi:id="_zhTowOOPEe-0hKspIKMEWA" base_Element="_oZ9bbjyPEe-nEP0EFGHiZg" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.11"/>
   <OpenModel_Profile:Choice xmi:id="_2ZxqsOOPEe-0hKspIKMEWA" base_DataType="_oZ9bbjyPEe-nEP0EFGHiZg"/>
   <OpenModel_Profile:Experimental xmi:id="___H0UOOPEe-0hKspIKMEWA" base_Element="_Cvq4cAqNEeiR0bIDVo1qmQ"/>
   <OpenModel_Profile:Experimental xmi:id="_B2rL0OOQEe-0hKspIKMEWA" base_Element="_TOwgUAJNEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_Ex5m0OOQEe-0hKspIKMEWA" base_Element="_nQeZEJScEeiyK8J2LEvIsA" reference="IEEE 1588-2019: clauses 5.3.4 and 7.5.2.2; ITU-T G.8265.1 v4.1 (08/2024): Annex A.7; ITU-T G.8275.1 v5.0 (02/2026): Annex A.6; ITU-T G.8275.2 v4.0 (02/2026): Annex A.7."/>
-  <OpenModel_Profile:Reference xmi:id="_ILD7AOOQEe-0hKspIKMEWA" base_Element="_7uCVMPuUEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.7."/>
-  <OpenModel_Profile:Reference xmi:id="_OcakUOOQEe-0hKspIKMEWA" base_Element="_n9xaQPuVEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.6.2.5."/>
-  <OpenModel_Profile:Reference xmi:id="_bAZpUOOQEe-0hKspIKMEWA" base_Element="_r24jpQeSEeeSr90X-zum4Q" reference="IEEE Std 1588-2019: clause 7.6.2.6."/>
-  <OpenModel_Profile:Reference xmi:id="_iSG8YOOQEe-0hKspIKMEWA" base_Element="_r24jpgeSEeeSr90X-zum4Q" reference="IEEE Std 1588-2019: clause 7.6.2.7."/>
+  <OpenModel_Profile:Reference xmi:id="_Ex5m0OOQEe-0hKspIKMEWA" base_Element="_nQeZEJScEeiyK8J2LEvIsA" reference="IEEE Std 1588-2019: clauses 5.3.4 and 7.5.2.2; ITU-T G.8265.1 v4.1 (08/2024): Annex A.7; ITU-T G.8275.1 v5.0 (02/2026): Annex A.6; ITU-T G.8275.2 v4.0 (02/2026): Annex A.7"/>
+  <OpenModel_Profile:Reference xmi:id="_ILD7AOOQEe-0hKspIKMEWA" base_Element="_7uCVMPuUEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.7"/>
+  <OpenModel_Profile:Reference xmi:id="_OcakUOOQEe-0hKspIKMEWA" base_Element="_n9xaQPuVEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.6.2.5"/>
+  <OpenModel_Profile:Reference xmi:id="_bAZpUOOQEe-0hKspIKMEWA" base_Element="_r24jpQeSEeeSr90X-zum4Q" reference="IEEE Std 1588-2019: clause 7.6.2.6"/>
+  <OpenModel_Profile:Reference xmi:id="_iSG8YOOQEe-0hKspIKMEWA" base_Element="_r24jpgeSEeeSr90X-zum4Q" reference="IEEE Std 1588-2019: clause 7.6.2.7"/>
   <OpenModel_Profile:Experimental xmi:id="_lYL8gOOQEe-0hKspIKMEWA" base_Element="_SpZwgAJNEeegkdv_tKLxWg"/>
   <OpenModel_Profile:Reference xmi:id="_nt2MUOOQEe-0hKspIKMEWA" base_Element="_-WmkMAF7Ee-e29a165jOaw" reference="IEEE Std 1588-2019: clause 8.2.15.4.4."/>
   <OpenModel_Profile:Experimental xmi:id="_qll1gOOQEe-0hKspIKMEWA" base_Element="_SFmf4AJNEeegkdv_tKLxWg"/>
   <OpenModel_Profile:Experimental xmi:id="_syP6UOOQEe-0hKspIKMEWA" base_Element="_I0MUAAJPEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_vGQkUOOQEe-0hKspIKMEWA" base_Element="_MKRuEPupEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.5."/>
-  <OpenModel_Profile:Reference xmi:id="_5VzhgOOQEe-0hKspIKMEWA" base_Element="_r1kbIPupEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.5.2.3."/>
+  <OpenModel_Profile:Reference xmi:id="_vGQkUOOQEe-0hKspIKMEWA" base_Element="_MKRuEPupEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.5"/>
+  <OpenModel_Profile:Reference xmi:id="_5VzhgOOQEe-0hKspIKMEWA" base_Element="_r1kbIPupEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.5.2.3"/>
   <OpenModel_Profile:Preliminary xmi:id="_8oYFgOOQEe-0hKspIKMEWA" base_Element="_SnmZsAJNEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_-A-3MOOQEe-0hKspIKMEWA" base_Element="_SnmZsAJNEeegkdv_tKLxWg" reference="IEEE Std 1588-2019: Table 27."/>
-  <OpenModel_Profile:Reference xmi:id="_HuMjYOOREe-0hKspIKMEWA" base_Element="_gIZxILBBEeyhQMOM4kxDSg" reference="IEEE Std 1588-2019: clause 20.3."/>
+  <OpenModel_Profile:Reference xmi:id="_-A-3MOOQEe-0hKspIKMEWA" base_Element="_SnmZsAJNEeegkdv_tKLxWg" reference="IEEE Std 1588-2019: Table 27"/>
+  <OpenModel_Profile:Reference xmi:id="_HuMjYOOREe-0hKspIKMEWA" base_Element="_gIZxILBBEeyhQMOM4kxDSg" reference="IEEE Std 1588-2019: clause 20.3"/>
   <OpenModel_Profile:Experimental xmi:id="_SLK4kOOREe-0hKspIKMEWA" base_Element="_TQgz0AJNEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_V_KHkOOREe-0hKspIKMEWA" base_Element="_gIeCkrBBEeyhQMOM4kxDSg" reference="ITU-T G.8265.1 v4.1 (08/2024)."/>
-  <OpenModel_Profile:Reference xmi:id="_YarHwOOREe-0hKspIKMEWA" base_Element="_gIeClLBBEeyhQMOM4kxDSg" reference="ITU-T G.8275.1 v5.0 (02/2026)."/>
-  <OpenModel_Profile:Reference xmi:id="_aUphIOOREe-0hKspIKMEWA" base_Element="_gIeClrBBEeyhQMOM4kxDSg" reference="ITU-T G.8275.2 v4.0 (02/2026)."/>
-  <OpenModel_Profile:Reference xmi:id="_dEOFwOOREe-0hKspIKMEWA" base_Element="_gaPGoPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.2."/>
-  <OpenModel_Profile:Reference xmi:id="_hNvf4OOREe-0hKspIKMEWA" base_Element="_rbT2IPurEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.6.2.8."/>
-  <OpenModel_Profile:Reference xmi:id="_3nWmMOOREe-0hKspIKMEWA" base_Element="_5mwiAPK2Ee6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.1; ITU-T G.8275.1 v5.0 (02/2026): annex A.1; ITU-T G.8275.2 v4.0 (02/2026): annex A.1."/>
+  <OpenModel_Profile:Reference xmi:id="_V_KHkOOREe-0hKspIKMEWA" base_Element="_gIeCkrBBEeyhQMOM4kxDSg" reference="ITU-T G.8265.1 v4.1 (08/2024)"/>
+  <OpenModel_Profile:Reference xmi:id="_YarHwOOREe-0hKspIKMEWA" base_Element="_gIeClLBBEeyhQMOM4kxDSg" reference="ITU-T G.8275.1 v5.0 (02/2026)"/>
+  <OpenModel_Profile:Reference xmi:id="_aUphIOOREe-0hKspIKMEWA" base_Element="_gIeClrBBEeyhQMOM4kxDSg" reference="ITU-T G.8275.2 v4.0 (02/2026)"/>
+  <OpenModel_Profile:Reference xmi:id="_dEOFwOOREe-0hKspIKMEWA" base_Element="_gaPGoPuxEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 5.3.2"/>
+  <OpenModel_Profile:Reference xmi:id="_hNvf4OOREe-0hKspIKMEWA" base_Element="_rbT2IPurEeyYWcp8834_4g" reference="IEEE Std 1588-2019: clause 7.6.2.8"/>
+  <OpenModel_Profile:Reference xmi:id="_3nWmMOOREe-0hKspIKMEWA" base_Element="_5mwiAPK2Ee6khsQrNUrTqg" reference="ITU-T G.8265.1 v4.1 (08/2024): annex A.1; ITU-T G.8275.1 v5.0 (02/2026): annex A.1; ITU-T G.8275.2 v4.0 (02/2026): annex A.1"/>
   <OpenModel_Profile:Experimental xmi:id="_6oQycOOREe-0hKspIKMEWA" base_Element="_MMWWcAeQEeeSr90X-zum4Q"/>
   <OpenModel_Profile:Experimental xmi:id="_9w3iIOOREe-0hKspIKMEWA" base_Element="_PtW2IAJNEeegkdv_tKLxWg"/>
   <OpenModel_Profile:Experimental xmi:id="_IZPPAOOSEe-0hKspIKMEWA" base_Element="_vsSHEAqMEeiR0bIDVo1qmQ"/>
   <OpenModel_Profile:Experimental xmi:id="_JlwsgOOSEe-0hKspIKMEWA" base_Element="_uzM9EAeNEeeSr90X-zum4Q"/>
   <OpenModel_Profile:Preliminary xmi:id="_ZKodYOdoEe-_EIe4GGpy2Q" base_Element="_TlCSUAJNEeegkdv_tKLxWg"/>
-  <OpenModel_Profile:Reference xmi:id="_4kFWIAZtEfCYoadliKChew" base_Element="_BvE7AMCFEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.12."/>
+  <OpenModel_Profile:Reference xmi:id="_4kFWIAZtEfCYoadliKChew" base_Element="_BvE7AMCFEe6csOUPxtf2vA" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.12"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_fhrh8AfIEfCVfpmBxw8Ozw" base_Property="_fhq64AfIEfCVfpmBxw8Ozw" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_32_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fh1S8AfIEfCVfpmBxw8Ozw" base_StructuralFeature="_fhq64AfIEfCVfpmBxw8Ozw" valueRange="0..12" unsigned="true" unit="seconds" support="OPTIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_fh6LcAfIEfCVfpmBxw8Ozw" base_Element="_fhq64AfIEfCVfpmBxw8Ozw" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.13."/>
+  <OpenModel_Profile:Reference xmi:id="_fh6LcAfIEfCVfpmBxw8Ozw" base_Element="_fhq64AfIEfCVfpmBxw8Ozw" reference="ITU-T G.781 v6.0 (01/2026): annex B.3.13"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_CMtngAfSEfCVfpmBxw8Ozw" base_Property="_CMtAcAfSEfCVfpmBxw8Ozw" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CM2xcAfSEfCVfpmBxw8Ozw" base_StructuralFeature="_CMtAcAfSEfCVfpmBxw8Ozw" valueRange="0...720" unsigned="true" unit="seconds" support="OPTIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_CM4moAfSEfCVfpmBxw8Ozw" base_Element="_CMtAcAfSEfCVfpmBxw8Ozw" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.15."/>
+  <OpenModel_Profile:Reference xmi:id="_CM4moAfSEfCVfpmBxw8Ozw" base_Element="_CMtAcAfSEfCVfpmBxw8Ozw" reference="ITU-T G.781 v6.0 (01/2026): annex B.6.2.15"/>
   <OpenModel_Profile:Reference xmi:id="_SoExQAfTEfCVfpmBxw8Ozw" base_Element="_op40MMuFEe6jTarIgt-ZIw" reference="ITU-T G.781 v6.0 (01/2026): annex B.2.4"/>
   <OpenModel_Profile:Preliminary xmi:id="_jDZjcAkAEfCinvq7STqz4Q" base_Element="_mEVkMMCCEe6csOUPxtf2vA"/>
-  <OpenModel_Profile:Reference xmi:id="_IPKooCVfEfCNNsK5pHCQeA" base_Element="_p5STsFqCEeeEToh03JBYQA" reference="ITU-T G.8265.1 v4.1 (08/2024); ITU-T G.8275.1 v5.0 (02/2026); ITU-T G.8275.2 v4.0 (02/2026); ITU-T G.781 v6.0 (01/2026)."/>
+  <OpenModel_Profile:Reference xmi:id="_IPKooCVfEfCNNsK5pHCQeA" base_Element="_p5STsFqCEeeEToh03JBYQA" reference="ITU-T G.8265.1 v4.1 (08/2024); ITU-T G.8275.1 v5.0 (02/2026); ITU-T G.8275.2 v4.0 (02/2026); ITU-T G.781 v6.0 (01/2026)"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_8bhbUJwWEfC2s4m-Mpzytw" base_Class="_8bci0JwWEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_8b6c4JwWEfC2s4m-Mpzytw" base_Class="_8bci0JwWEfC2s4m-Mpzytw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_8b7D8JwWEfC2s4m-Mpzytw" base_Property="_8bci0pwWEfC2s4m-Mpzytw"/>
@@ -4152,14 +4152,14 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8cDm0JwWEfC2s4m-Mpzytw" base_StructuralFeature="_8bci5ZwWEfC2s4m-Mpzytw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_8cDm0ZwWEfC2s4m-Mpzytw" base_Property="_8bci55wWEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8cEN4JwWEfC2s4m-Mpzytw" base_StructuralFeature="_8bci55wWEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_8cj9IJwWEfC2s4m-Mpzytw" base_Element="_8bci0JwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1."/>
+  <OpenModel_Profile:Reference xmi:id="_8cj9IJwWEfC2s4m-Mpzytw" base_Element="_8bci0JwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1"/>
   <OpenModel_Profile:Reference xmi:id="_8co1oJwWEfC2s4m-Mpzytw" base_Element="_8bci0pwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.4.3."/>
   <OpenModel_Profile:Reference xmi:id="_8csgAJwWEfC2s4m-Mpzytw" base_Element="_8bci1JwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.4.4."/>
   <OpenModel_Profile:Reference xmi:id="_8cwKYJwWEfC2s4m-Mpzytw" base_Element="_8bci1pwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.2.2."/>
   <OpenModel_Profile:Reference xmi:id="_8c2RAJwWEfC2s4m-Mpzytw" base_Element="_8bci2JwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.4.1."/>
   <OpenModel_Profile:Reference xmi:id="_8c6icJwWEfC2s4m-Mpzytw" base_Element="_8bci2pwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.4.2."/>
   <OpenModel_Profile:Reference xmi:id="_8c-M0JwWEfC2s4m-Mpzytw" base_Element="_8bci3JwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.3.1."/>
-  <OpenModel_Profile:Reference xmi:id="_8dB3MJwWEfC2s4m-Mpzytw" base_Element="_8bci3pwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.2.1."/>
+  <OpenModel_Profile:Reference xmi:id="_8dB3MJwWEfC2s4m-Mpzytw" base_Element="_8bci3pwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.2.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_8dDsYJwWEfC2s4m-Mpzytw" base_Element="_8bci3pwWEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:Reference xmi:id="_8dGvsJwWEfC2s4m-Mpzytw" base_Element="_8bci4ZwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.2.3."/>
   <OpenModel_Profile:Reference xmi:id="_8dLoMJwWEfC2s4m-Mpzytw" base_Element="_8bci45wWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: clause 8.2.1.4.5."/>
@@ -4171,25 +4171,25 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="__W5AQJwWEfC2s4m-Mpzytw" base_StructuralFeature="__WnTdJwWEfC2s4m-Mpzytw" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="__W5AQZwWEfC2s4m-Mpzytw" base_Property="__WnTdpwWEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__W5nUJwWEfC2s4m-Mpzytw" base_StructuralFeature="__WnTdpwWEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="__XL7MJwWEfC2s4m-Mpzytw" base_Element="__WnTcJwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1."/>
-  <OpenModel_Profile:Reference xmi:id="__XSo4JwWEfC2s4m-Mpzytw" base_Element="__WnTdJwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1.1."/>
-  <OpenModel_Profile:Reference xmi:id="__XVFIJwWEfC2s4m-Mpzytw" base_Element="__WnTdpwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1.2."/>
+  <OpenModel_Profile:Reference xmi:id="__XL7MJwWEfC2s4m-Mpzytw" base_Element="__WnTcJwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="__XSo4JwWEfC2s4m-Mpzytw" base_Element="__WnTdJwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1.1"/>
+  <OpenModel_Profile:Reference xmi:id="__XVFIJwWEfC2s4m-Mpzytw" base_Element="__WnTdpwWEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.5.1.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_vVZAoJwYEfC2s4m-Mpzytw" base_Property="_vVYZkpwYEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vViKkJwYEfC2s4m-Mpzytw" base_StructuralFeature="_vVYZkpwYEfC2s4m-Mpzytw" partOfObjectKey="1" isInvariant="true" unsigned="true" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_vVj_wJwYEfC2s4m-Mpzytw" base_Element="_vVYZkJwYEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4.1."/>
-  <OpenModel_Profile:Reference xmi:id="_DtmP4JwZEfC2s4m-Mpzytw" base_Element="_vVYZkpwYEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4."/>
+  <OpenModel_Profile:Reference xmi:id="_vVj_wJwYEfC2s4m-Mpzytw" base_Element="_vVYZkJwYEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4.1"/>
+  <OpenModel_Profile:Reference xmi:id="_DtmP4JwZEfC2s4m-Mpzytw" base_Element="_vVYZkpwYEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ImKhUpwZEfC2s4m-Mpzytw" base_Property="_ImKhUJwZEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ImTrQJwZEfC2s4m-Mpzytw" base_StructuralFeature="_ImKhUJwZEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_ImcOIJwZEfC2s4m-Mpzytw" base_Element="_ImKhUJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.2."/>
+  <OpenModel_Profile:Reference xmi:id="_ImcOIJwZEfC2s4m-Mpzytw" base_Element="_ImKhUJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_mF2ScJwZEfC2s4m-Mpzytw" base_Property="_mF1rYJwZEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mGDGwJwZEfC2s4m-Mpzytw" base_StructuralFeature="_mF1rYJwZEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_mGJNYJwZEfC2s4m-Mpzytw" base_Element="_mF1rYJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.2."/>
+  <OpenModel_Profile:Reference xmi:id="_mGJNYJwZEfC2s4m-Mpzytw" base_Element="_mF1rYJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_2q9qkpwZEfC2s4m-Mpzytw" base_Property="_2q9qkJwZEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2rIpsJwZEfC2s4m-Mpzytw" base_StructuralFeature="_2q9qkJwZEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_2rLF8JwZEfC2s4m-Mpzytw" base_Element="_2q9qkJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4."/>
+  <OpenModel_Profile:Reference xmi:id="_2rLF8JwZEfC2s4m-Mpzytw" base_Element="_2q9qkJwZEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J.4"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_oK7TKpwaEfC2s4m-Mpzytw" base_Property="_oK7TIpwaEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oLGSQJwaEfC2s4m-Mpzytw" base_StructuralFeature="_oK7TIpwaEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_oLJVkJwaEfC2s4m-Mpzytw" base_Element="_oK7TIJwaEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: table J.1; ITU-T G.8275 v5.0 (01/2026): table F.1."/>
+  <OpenModel_Profile:Reference xmi:id="_oLJVkJwaEfC2s4m-Mpzytw" base_Element="_oK7TIJwaEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: table J.1; ITU-T G.8275 v5.0 (01/2026): table F.1"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_eRmnIJwmEfC2s4m-Mpzytw" base_Property="_eRmAEJwmEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_eRyNUJwmEfC2s4m-Mpzytw" base_StructuralFeature="_eRmAEJwmEfC2s4m-Mpzytw" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_kcVEAJwmEfC2s4m-Mpzytw" base_Property="_kcUc8JwmEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
@@ -4224,15 +4224,15 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QLkEEJwnEfC2s4m-Mpzytw" base_StructuralFeature="_QLcIQpwnEfC2s4m-Mpzytw" isInvariant="true"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_QLkEEZwnEfC2s4m-Mpzytw" base_Property="_QLcIRJwnEfC2s4m-Mpzytw" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QLkEEpwnEfC2s4m-Mpzytw" base_StructuralFeature="_QLcIRJwnEfC2s4m-Mpzytw" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_QLqxwJwnEfC2s4m-Mpzytw" base_Element="_QLcIQJwnEfC2s4m-Mpzytw" reference="ITU-T G.8275 v5.0 (01/2026): annex F.4."/>
-  <OpenModel_Profile:Reference xmi:id="_QLsm8JwnEfC2s4m-Mpzytw" base_Element="_QLcIQpwnEfC2s4m-Mpzytw" reference="ITU-T G.8275 v5.0 (01/2026): annex F.1."/>
+  <OpenModel_Profile:Reference xmi:id="_QLqxwJwnEfC2s4m-Mpzytw" base_Element="_QLcIQJwnEfC2s4m-Mpzytw" reference="ITU-T G.8275 v5.0 (01/2026): annex F.4"/>
+  <OpenModel_Profile:Reference xmi:id="_QLsm8JwnEfC2s4m-Mpzytw" base_Element="_QLcIQpwnEfC2s4m-Mpzytw" reference="ITU-T G.8275 v5.0 (01/2026): annex F.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_QLt1EJwnEfC2s4m-Mpzytw" base_Element="_QLcIRJwnEfC2s4m-Mpzytw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_4C_sIZwnEfC2s4m-Mpzytw" base_Property="_4C_sIJwnEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4DKrQJwnEfC2s4m-Mpzytw" base_StructuralFeature="_4C_sIJwnEfC2s4m-Mpzytw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_4DL5YZwnEfC2s4m-Mpzytw" base_Property="_4DL5YJwnEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4DL5YpwnEfC2s4m-Mpzytw" base_StructuralFeature="_4DL5YJwnEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:Cond xmi:id="_XbG-gJwoEfC2s4m-Mpzytw" condition="When the system supports PTP Performance Monitoring (PM)." base_Relationship="_4CwbkJwnEfC2s4m-Mpzytw"/>
-  <OpenModel_Profile:Reference xmi:id="_XnYf8JwoEfC2s4m-Mpzytw" base_Element="_4CwbkJwnEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J."/>
+  <OpenModel_Profile:Reference xmi:id="_XnYf8JwoEfC2s4m-Mpzytw" base_Element="_4CwbkJwnEfC2s4m-Mpzytw" reference="IEEE Std 1588-2019: annex J"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_X6J1gJwpEfC2s4m-Mpzytw" base_Property="_X6JOcpwpEfC2s4m-Mpzytw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_X6SYYJwpEfC2s4m-Mpzytw" base_StructuralFeature="_X6JOcpwpEfC2s4m-Mpzytw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_X6TmgpwpEfC2s4m-Mpzytw" base_Property="_X6TmgZwpEfC2s4m-Mpzytw"/>
@@ -4271,7 +4271,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ppMJgC3pEfGX7Jwr7U0FeQ" base_StructuralFeature="_ppJGMC3pEfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_sNVhQS3pEfGX7Jwr7U0FeQ" base_Property="_sNVhQC3pEfGX7Jwr7U0FeQ" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sNZLoC3pEfGX7Jwr7U0FeQ" base_StructuralFeature="_sNVhQC3pEfGX7Jwr7U0FeQ" unsigned="true" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_-sF7kC3pEfGX7Jwr7U0FeQ" base_Element="_WeXTYC3pEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.9; ITU-T ITU-T G.8275.2 v4.0 (02/2026): clause 6.10"/>
+  <OpenModel_Profile:Reference xmi:id="_-sF7kC3pEfGX7Jwr7U0FeQ" base_Element="_WeXTYC3pEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.2.9; ITU-T G.8275.2 v4.0 (02/2026): clause 6.10"/>
   <OpenModel_Profile:Reference xmi:id="_9kasYC3qEfGX7Jwr7U0FeQ" base_Element="_sNVhQC3pEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): annex M; ; ITU-T G.8275.2 v4.0 (02/2026): annex G"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_L5t-AS3rEfGX7Jwr7U0FeQ" base_Property="_L5t-AC3rEfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_L5xoYC3rEfGX7Jwr7U0FeQ" base_StructuralFeature="_L5t-AC3rEfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
@@ -4295,7 +4295,7 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_q0TU8S3tEfGX7Jwr7U0FeQ" base_Property="_q0TU8C3tEfGX7Jwr7U0FeQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_q0TU8i3tEfGX7Jwr7U0FeQ" base_StructuralFeature="_q0TU8C3tEfGX7Jwr7U0FeQ"/>
   <OpenModel_Profile:Cond xmi:id="_vm3sEC3tEfGX7Jwr7U0FeQ" base_Relationship="_q0OccC3tEfGX7Jwr7U0FeQ"/>
-  <OpenModel_Profile:Reference xmi:id="_J6lQcC3uEfGX7Jwr7U0FeQ" base_Element="_iMET0C3tEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.10; ITU-T G.8275.1 v5.0 (02/2026): clause 6.7.12"/>
+  <OpenModel_Profile:Reference xmi:id="_J6lQcC3uEfGX7Jwr7U0FeQ" base_Element="_iMET0C3tEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.10; ITU-T G.8275.2 v4.0 (02/2026): clause 6.7.12"/>
   <OpenModel_Profile:Reference xmi:id="_h79l0C3uEfGX7Jwr7U0FeQ" base_Element="_oH-4oC3tEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): annex L.3"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_r3rBAS3uEfGX7Jwr7U0FeQ" base_Property="_r3rBAC3uEfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_r3uEUC3uEfGX7Jwr7U0FeQ" base_StructuralFeature="_r3rBAC3uEfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
@@ -4327,13 +4327,13 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rAkAkC3zEfGX7Jwr7U0FeQ" base_StructuralFeature="_rAgWMC3zEfGX7Jwr7U0FeQ" partOfObjectKey="1" isInvariant="true" unsigned="true" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_E5Y_wi30EfGX7Jwr7U0FeQ" base_Property="_E5Y_wC30EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E5cqIC30EfGX7Jwr7U0FeQ" base_StructuralFeature="_E5Y_wC30EfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_E5j-4C30EfGX7Jwr7U0FeQ" base_Element="_E5Y_wC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.2."/>
+  <OpenModel_Profile:Reference xmi:id="_E5j-4C30EfGX7Jwr7U0FeQ" base_Element="_E5Y_wC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_F70tIi30EfGX7Jwr7U0FeQ" base_Property="_F70tIC30EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_F73wcC30EfGX7Jwr7U0FeQ" base_StructuralFeature="_F70tIC30EfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_F76zwC30EfGX7Jwr7U0FeQ" base_Element="_F70tIC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.2."/>
+  <OpenModel_Profile:Reference xmi:id="_F76zwC30EfGX7Jwr7U0FeQ" base_Element="_F70tIC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.2"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_HZp9Ei30EfGX7Jwr7U0FeQ" base_Property="_HZp9EC30EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HZtAYC30EfGX7Jwr7U0FeQ" base_StructuralFeature="_HZp9EC30EfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_HZwDsi30EfGX7Jwr7U0FeQ" base_Element="_HZp9EC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4."/>
+  <OpenModel_Profile:Reference xmi:id="_HZwDsi30EfGX7Jwr7U0FeQ" base_Element="_HZp9EC30EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4"/>
   <OpenModel_Profile:Reference xmi:id="_YZlB4C30EfGX7Jwr7U0FeQ" base_Element="_rAgWMC3zEfGX7Jwr7U0FeQ" reference="ITU-T G.8275 v5.0 (01/2026): annex F.1"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_diqCQC35EfGX7Jwr7U0FeQ" base_Property="_dipbMi35EfGX7Jwr7U0FeQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_disegC35EfGX7Jwr7U0FeQ" base_StructuralFeature="_dipbMi35EfGX7Jwr7U0FeQ"/>
@@ -4343,20 +4343,20 @@ When set to FALSE, the active time reference is the local time reference (LTR).<
   <OpenModel_Profile:OpenModelAttribute xmi:id="_w1dIoC35EfGX7Jwr7U0FeQ" base_StructuralFeature="_w1aFUC35EfGX7Jwr7U0FeQ" unsigned="true" unit="seconds" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_xBc9Qi35EfGX7Jwr7U0FeQ" base_Property="_xBc9QC35EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xBgnoC35EfGX7Jwr7U0FeQ" base_StructuralFeature="_xBc9QC35EfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_xBhOsC35EfGX7Jwr7U0FeQ" base_Element="_xBc9QC35EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4."/>
+  <OpenModel_Profile:Reference xmi:id="_xBhOsC35EfGX7Jwr7U0FeQ" base_Element="_xBc9QC35EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_14Df0S35EfGX7Jwr7U0FeQ" base_Property="_14Df0C35EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED" bitLength="LENGTH_32_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_14GjIC35EfGX7Jwr7U0FeQ" base_StructuralFeature="_14Df0C35EfGX7Jwr7U0FeQ" unsigned="true" unit="seconds" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_2Ebu8i35EfGX7Jwr7U0FeQ" base_Property="_2Ebu8C35EfGX7Jwr7U0FeQ" writeAllowed="WRITE_NOT_ALLOWED"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2EfZUC35EfGX7Jwr7U0FeQ" base_StructuralFeature="_2Ebu8C35EfGX7Jwr7U0FeQ" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_2EgAYC35EfGX7Jwr7U0FeQ" base_Element="_2Ebu8C35EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4."/>
+  <OpenModel_Profile:Reference xmi:id="_2EgAYC35EfGX7Jwr7U0FeQ" base_Element="_2Ebu8C35EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: annex J.4"/>
   <OpenModel_Profile:Reference xmi:id="__w6bUC35EfGX7Jwr7U0FeQ" base_Element="_Z6FZEC35EfGX7Jwr7U0FeQ" reference="ITU-T G.8275 v5.0 (01/2026): table G.1"/>
   <OpenModel_Profile:ExtendedComposite xmi:id="_sN0ZsC36EfGX7Jwr7U0FeQ" base_Association="_dioNEC35EfGX7Jwr7U0FeQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_MFy34i37EfGX7Jwr7U0FeQ" base_Property="_MFy34C37EfGX7Jwr7U0FeQ" bitLength="LENGTH_8_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MF17MC37EfGX7Jwr7U0FeQ" base_StructuralFeature="_MFy34C37EfGX7Jwr7U0FeQ" unsigned="true" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_MF4-gC37EfGX7Jwr7U0FeQ" base_Element="_MFy34C37EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: clause 7.6.2.6."/>
+  <OpenModel_Profile:Reference xmi:id="_MF4-gC37EfGX7Jwr7U0FeQ" base_Element="_MFy34C37EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: clause 7.6.2.6"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_NOHK0i37EfGX7Jwr7U0FeQ" base_Property="_NOHK0C37EfGX7Jwr7U0FeQ" bitLength="LENGTH_16_BIT"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NOK1MC37EfGX7Jwr7U0FeQ" base_StructuralFeature="_NOHK0C37EfGX7Jwr7U0FeQ" unsigned="true" support="CONDITIONAL"/>
-  <OpenModel_Profile:Reference xmi:id="_NOPGoC37EfGX7Jwr7U0FeQ" base_Element="_NOHK0C37EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: clause 7.6.2.7."/>
+  <OpenModel_Profile:Reference xmi:id="_NOPGoC37EfGX7Jwr7U0FeQ" base_Element="_NOHK0C37EfGX7Jwr7U0FeQ" reference="IEEE Std 1588-2019: clause 7.6.2.7"/>
   <OpenModel_Profile:Reference xmi:id="_TL0fYC37EfGX7Jwr7U0FeQ" base_Element="_uYDlAC3sEfGX7Jwr7U0FeQ" reference="ITU-T G.8275.1 v5.0 (02/2026): clause 6.3.5; ITU-T G.8275.1 v5.0 (02/2026): clause 6.7.6"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_BZojgDc4EfGh5N2JPvLWEQ" base_Class="_BZn8cDc4EfGh5N2JPvLWEQ" support="CONDITIONAL"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_BZuqIDc4EfGh5N2JPvLWEQ" base_Class="_BZn8cDc4EfGh5N2JPvLWEQ"/>

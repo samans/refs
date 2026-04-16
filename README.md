@@ -20,5 +20,12 @@
   - In this version you need to edit the shell script to update the basedir variable with a pointer to the top of the directory you want to loop over.
   - To invoke:  "bash ref-trim-uml.sh | sort | uniq >> uml-ref.out"
 
+### ref-trim-raw-uml.sh:
+  - Script to loop over a directory of UML files and will send all references to stdout
+  - Temporary solution that will print all the raw information (i.e. not running the sed scripts)
+  - In this version you need to edit the shell script to update the basedir variable with a pointer to the top of the directory you want to loop over.
+  - To invoke:  "bash ref-trim-raw-uml.sh | sort | uniq >> raw-uml-ref.out"
+
 ## ToDo:
   - parameterize the basedir variable
+  - parameterize the "raw" option
