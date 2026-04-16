@@ -16,7 +16,7 @@ for f in $glob
     filename=`basename "${f}"`
     modname=`echo $filename | cut -d'.' -f 1`
 
-    pyang -V -p ~/gits/yang/standard/ieee/published/802 -p ~/gits/yang/standard/ieee/published/802.1 -p ~/gits/yang/standard/ieee/published/1588 -p ~/gits/yang/standard/itu/published/ITU-T_SG15 -p ~/gits/yang/standard/ietf/RFC -f yin ${f} -o ${yindir}/${modname}.yin
+    pyang -p ~/gits/yang/standard/ieee/published/802 -p ~/gits/yang/standard/ieee/published/802.1 -p ~/gits/yang/standard/ieee/published/1588 -p ~/gits/yang/standard/itu/published/ITU-T_SG15 -p ~/gits/yang/standard/ietf/RFC -f yin ${f} -o ${yindir}/${modname}.yin
 
     xmllint --xpath "//*[local-name()='reference']" ${yindir}/${modname}.yin | sed 's/<[^>]*>//g' | sed '/^[ ]*$/d' | sed 's/^[ ]*//g'
   done
